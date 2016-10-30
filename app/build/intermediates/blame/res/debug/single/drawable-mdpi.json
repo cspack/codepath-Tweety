@@ -16,12 +16,12 @@
         "source": "/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable-mdpi/common_google_signin_btn_text_light_disabled.9.png"
     },
     {
-        "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/drawable-mdpi/common_plus_signin_btn_text_light_disabled.9.png",
-        "source": "/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable-mdpi/common_plus_signin_btn_text_light_disabled.9.png"
-    },
-    {
         "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/drawable-mdpi/twitter_logo_white.png",
         "source": "/home/chris/dev/git/Tweety/app/build/generated/res/pngs/debug/drawable-mdpi/twitter_logo_white.png"
+    },
+    {
+        "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/drawable-mdpi/common_plus_signin_btn_text_light_disabled.9.png",
+        "source": "/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable-mdpi/common_plus_signin_btn_text_light_disabled.9.png"
     },
     {
         "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/drawable-mdpi/common_plus_signin_btn_icon_light_disabled.9.png",

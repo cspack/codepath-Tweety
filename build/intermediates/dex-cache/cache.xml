@@ -7,7 +7,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="ec4fc9668a4747f45d387cd96ac9ca76ad96c15e">
+        sha1="d994fde0cb6f36da78ecdb0dfa026b615539e50c">
         <dex dex="/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_69712ffffb908607ad5b10747752ff77c19d2b6f/classes.dex" />
     </item>
     <item
@@ -340,7 +340,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="36192ddd3d465d3f57a0e33a353e7a68d0148a34">
+        sha1="707abf1df5dba91c01c9330dd5cfc05ca4cc8e10">
         <dex dex="/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_6f1badd7c1426053f343a56eec1e040b960892d3/classes.dex" />
     </item>
     <item

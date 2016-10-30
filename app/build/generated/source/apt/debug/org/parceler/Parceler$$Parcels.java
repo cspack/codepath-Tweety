@@ -6,7 +6,7 @@ import java.util.Map;
 import com.cspack.tweety.models.UserModel;
 import com.cspack.tweety.models.UserModel$$Parcelable;
 
-@Generated(value = "org.parceler.ParcelAnnotationProcessor", date = "2016-10-30T13:21-0700")
+@Generated(value = "org.parceler.ParcelAnnotationProcessor", date = "2016-10-30T13:37-0700")
 @SuppressWarnings({
     "unchecked",
     "deprecation"

@@ -15,18 +15,18 @@ import java.lang.String;
  * This is generated code. Please do not modify */
 public final class TwitterDatabaseTwitterDatabase_Database extends DatabaseDefinition {
   public TwitterDatabaseTwitterDatabase_Database(DatabaseHolder holder) {
-    holder.putDatabaseForTable(TweetModel.class, this);
-    holder.putDatabaseForTable(UserModel.class, this);
     holder.putDatabaseForTable(TweetListModel.class, this);
-    models.add(TweetModel.class);
-    modelTableNames.put("TweetModel", TweetModel.class);
-    modelAdapters.put(TweetModel.class, new TweetModel_Table(holder, this));
-    models.add(UserModel.class);
-    modelTableNames.put("UserModel", UserModel.class);
-    modelAdapters.put(UserModel.class, new UserModel_Table(holder, this));
+    holder.putDatabaseForTable(UserModel.class, this);
+    holder.putDatabaseForTable(TweetModel.class, this);
     models.add(TweetListModel.class);
     modelTableNames.put("TweetListModel", TweetListModel.class);
     modelAdapters.put(TweetListModel.class, new TweetListModel_Table(holder, this));
+    models.add(UserModel.class);
+    modelTableNames.put("UserModel", UserModel.class);
+    modelAdapters.put(UserModel.class, new UserModel_Table(holder, this));
+    models.add(TweetModel.class);
+    modelTableNames.put("TweetModel", TweetModel.class);
+    modelAdapters.put(TweetModel.class, new TweetModel_Table(holder, this));
   }
 
   @Override
