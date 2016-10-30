@@ -57,7 +57,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-[View video no imgur](http://i.imgur.com/OKT1ryw.gifv)
+[View video on imgur.com](http://i.imgur.com/OKT1ryw.gifv)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
