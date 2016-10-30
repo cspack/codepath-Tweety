@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    package="com.raizlabs.android.dbflow"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="49" >
+
+    <uses-sdk
+        android:minSdkVersion="4"
+        android:targetSdkVersion="24" />
+
+    <application />
+
+</manifest>

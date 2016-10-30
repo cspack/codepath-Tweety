@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Tweety App</string>
+    <string name="login_label">Log in to Twitter</string>
+    <string name="login_failed">Unable to log in to Twitter. Try again.</string>
+    <string name="snackbar_throttled">You have made too many requests to Twitter. Please wait a minute.</string>
+    <string name="snackbar_internal">An internal error occurred.</string>
+    <string name="snackbar_network">Connecting to server failed...</string>
+    <string name="snackbar_retry">Retry</string>
+    <string name="compose">Compose a tweet</string>
+    <string name="compose_dialog_title">Compose a Tweet</string>
+    <string name="tweet">Tweet</string>
+    <string name="submit_label">Tweet</string>
+    <string name="cancel_label">Cancel</string>
+
+</resources>

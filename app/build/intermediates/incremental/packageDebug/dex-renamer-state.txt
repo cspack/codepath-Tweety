@@ -1,0 +1,7 @@
+#Sun Oct 30 13:15:31 PDT 2016
+base.0=/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_69712ffffb908607ad5b10747752ff77c19d2b6f
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_6f1badd7c1426053f343a56eec1e040b960892d3/classes.dex
+base.1=/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_6f1badd7c1426053f343a56eec1e040b960892d3
+file.0=/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_69712ffffb908607ad5b10747752ff77c19d2b6f/classes.dex

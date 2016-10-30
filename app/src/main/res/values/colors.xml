@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="twitter_very_dark">#292F33</color>
+    <color name="twitter_primary_dark">#0886d4</color>
+    <color name="twitter_primary">#1DA1F2</color>
+    <color name="twitter_primary_light">#6abef2</color>
+    <color name="twitter_black">#14171A</color>
+    <color name="twitter_gray_9c">#657786</color>
+    <color name="twitter_gray_7c">#AAB8C2</color>
+    <color name="twitter_gray_3c">#E1E8ED</color>
+    <color name="twitter_gray_1c">#F5F8FA</color>
+    <color name="color_error">#cc3030</color>
+</resources>

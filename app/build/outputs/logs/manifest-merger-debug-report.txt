@@ -1,0 +1,176 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/chris/dev/git/Tweety/app/src/main/AndroidManifest.xml:2:1-47:12
+	package
+		ADDED from /home/chris/dev/git/Tweety/app/src/main/AndroidManifest.xml:3:11-38
+		INJECTED from /home/chris/dev/git/Tweety/app/src/main/AndroidManifest.xml
+		INJECTED from /home/chris/dev/git/Tweety/app/src/main/AndroidManifest.xml
+	android:versionName
+		ADDED from /home/chris/dev/git/Tweety/app/src/main/AndroidManifest.xml:5:11-36
+		INJECTED from /home/chris/dev/git/Tweety/app/src/main/AndroidManifest.xml
+		INJECTED from /home/chris/dev/git/Tweety/app/src/main/AndroidManifest.xml
+	android:versionCode
+		ADDED from /home/chris/dev/git/Tweety/app/src/main/AndroidManifest.xml:4:11-34
+		INJECTED from /home/chris/dev/git/Tweety/app/src/main/AndroidManifest.xml
+		INJECTED from /home/chris/dev/git/Tweety/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/chris/dev/git/Tweety/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /home/chris/dev/git/Tweety/app/src/main/AndroidManifest.xml:7:5-66
+MERGED from [com.google.android.gms:play-services-gcm:8.4.0] /home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/8.4.0/AndroidManifest.xml:22:5-67
+MERGED from [com.google.android.gms:play-services-measurement:8.4.0] /home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-measurement/8.4.0/AndroidManifest.xml:21:5-67
+	android:name
+		ADDED from /home/chris/dev/git/Tweety/app/src/main/AndroidManifest.xml:7:22-64
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /home/chris/dev/git/Tweety/app/src/main/AndroidManifest.xml:8:5-80
+	android:name
+		ADDED from /home/chris/dev/git/Tweety/app/src/main/AndroidManifest.xml:8:22-78
+application
+ADDED from /home/chris/dev/git/Tweety/app/src/main/AndroidManifest.xml:10:5-45:19
+MERGED from [com.android.support:appcompat-v7:24.2.0] /home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-vector-drawable:24.2.0] /home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.0/AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:support-compat:24.2.0] /home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:24.2.0] /home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:24.2.0] /home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:24.2.0] /home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:24.2.0] /home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:24.2.0] /home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:24.2.0] /home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:cardview-v7:24.2.0] /home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/24.2.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:24.2.0] /home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.android.support/design/24.2.0/AndroidManifest.xml:22:5-20
+MERGED from [com.github.Raizlabs.DBFlow:dbflow:4.0.0-beta1] /home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.github.Raizlabs.DBFlow/dbflow/4.0.0-beta1/AndroidManifest.xml:11:5-20
+MERGED from [com.google.android.gms:play-services-gcm:8.4.0] /home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/8.4.0/AndroidManifest.xml:24:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] /home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.google.android.gms:play-services-measurement:8.4.0] /home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-measurement/8.4.0/AndroidManifest.xml:26:5-46:19
+MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] /home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.4.0/AndroidManifest.xml:19:5-20
+	android:label
+		ADDED from /home/chris/dev/git/Tweety/app/src/main/AndroidManifest.xml:14:13-45
+	android:allowBackup
+		ADDED from /home/chris/dev/git/Tweety/app/src/main/AndroidManifest.xml:12:13-39
+	android:icon
+		ADDED from /home/chris/dev/git/Tweety/app/src/main/AndroidManifest.xml:13:13-49
+	android:theme
+		ADDED from /home/chris/dev/git/Tweety/app/src/main/AndroidManifest.xml:15:13-44
+	android:name
+		ADDED from /home/chris/dev/git/Tweety/app/src/main/AndroidManifest.xml:11:13-47
+activity#com.cspack.tweety.activities.LoginActivity
+ADDED from /home/chris/dev/git/Tweety/app/src/main/AndroidManifest.xml:16:9-36:20
+	android:label
+		ADDED from /home/chris/dev/git/Tweety/app/src/main/AndroidManifest.xml:18:17-49
+	android:noHistory
+		ADDED from /home/chris/dev/git/Tweety/app/src/main/AndroidManifest.xml:19:17-41
+	android:theme
+		ADDED from /home/chris/dev/git/Tweety/app/src/main/AndroidManifest.xml:20:17-48
+	android:name
+		ADDED from /home/chris/dev/git/Tweety/app/src/main/AndroidManifest.xml:17:17-57
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /home/chris/dev/git/Tweety/app/src/main/AndroidManifest.xml:21:13-25:29
+action#android.intent.action.MAIN
+ADDED from /home/chris/dev/git/Tweety/app/src/main/AndroidManifest.xml:22:17-68
+	android:name
+		ADDED from /home/chris/dev/git/Tweety/app/src/main/AndroidManifest.xml:22:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/chris/dev/git/Tweety/app/src/main/AndroidManifest.xml:24:17-76
+	android:name
+		ADDED from /home/chris/dev/git/Tweety/app/src/main/AndroidManifest.xml:24:27-74
+intent-filter#android.intent.action.VIEW+android.intent.category.BROWSABLE+android.intent.category.DEFAULT
+ADDED from /home/chris/dev/git/Tweety/app/src/main/AndroidManifest.xml:26:13-35:29
+action#android.intent.action.VIEW
+ADDED from /home/chris/dev/git/Tweety/app/src/main/AndroidManifest.xml:27:17-68
+	android:name
+		ADDED from /home/chris/dev/git/Tweety/app/src/main/AndroidManifest.xml:27:25-66
+category#android.intent.category.DEFAULT
+ADDED from /home/chris/dev/git/Tweety/app/src/main/AndroidManifest.xml:29:17-75
+	android:name
+		ADDED from /home/chris/dev/git/Tweety/app/src/main/AndroidManifest.xml:29:27-73
+category#android.intent.category.BROWSABLE
+ADDED from /home/chris/dev/git/Tweety/app/src/main/AndroidManifest.xml:30:17-77
+	android:name
+		ADDED from /home/chris/dev/git/Tweety/app/src/main/AndroidManifest.xml:30:27-75
+data
+ADDED from /home/chris/dev/git/Tweety/app/src/main/AndroidManifest.xml:32:17-34:63
+	android:host
+		ADDED from /home/chris/dev/git/Tweety/app/src/main/AndroidManifest.xml:33:25-52
+	android:scheme
+		ADDED from /home/chris/dev/git/Tweety/app/src/main/AndroidManifest.xml:34:25-61
+activity#com.cspack.tweety.activities.TwitterActivity
+ADDED from /home/chris/dev/git/Tweety/app/src/main/AndroidManifest.xml:37:9-38:20
+	android:name
+		ADDED from /home/chris/dev/git/Tweety/app/src/main/AndroidManifest.xml:37:19-61
+meta-data#com.google.android.gms.version
+ADDED from /home/chris/dev/git/Tweety/app/src/main/AndroidManifest.xml:42:9-44:72
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] /home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:21:9-23:69
+	android:value
+		ADDED from /home/chris/dev/git/Tweety/app/src/main/AndroidManifest.xml:44:17-70
+	android:name
+		ADDED from /home/chris/dev/git/Tweety/app/src/main/AndroidManifest.xml:43:17-62
+uses-sdk
+INJECTED from /home/chris/dev/git/Tweety/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.codepath.libraries:android-oauth-handler:1.1.0] /home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.codepath.libraries/android-oauth-handler/1.1.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:24.2.0] /home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-vector-drawable:24.2.0] /home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.0/AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:support-compat:24.2.0] /home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:animated-vector-drawable:24.2.0] /home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:24.2.0] /home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.0/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-core-utils:24.2.0] /home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.0/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-media-compat:24.2.0] /home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.0/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:24.2.0] /home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.0/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-fragment:24.2.0] /home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.0/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:cardview-v7:24.2.0] /home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/24.2.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:design:24.2.0] /home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.android.support/design/24.2.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:24.2.0] /home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.2.0/AndroidManifest.xml:20:5-43
+MERGED from [jp.wasabeef:picasso-transformations:2.1.0] /home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/jp.wasabeef/picasso-transformations/2.1.0/AndroidManifest.xml:8:5-10:41
+MERGED from [com.github.Raizlabs.DBFlow:dbflow:4.0.0-beta1] /home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.github.Raizlabs.DBFlow/dbflow/4.0.0-beta1/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.gms:play-services-gcm:8.4.0] /home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/8.4.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-base:8.4.0] /home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] /home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-measurement:8.4.0] /home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-measurement/8.4.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] /home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.4.0/AndroidManifest.xml:18:5-42
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:24.2.0] /home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		INJECTED from /home/chris/dev/git/Tweety/app/src/main/AndroidManifest.xml
+		INJECTED from /home/chris/dev/git/Tweety/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/chris/dev/git/Tweety/app/src/main/AndroidManifest.xml
+		INJECTED from /home/chris/dev/git/Tweety/app/src/main/AndroidManifest.xml
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.android.gms:play-services-gcm:8.4.0] /home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/8.4.0/AndroidManifest.xml:21:5-82
+	android:name
+		ADDED from [com.google.android.gms:play-services-gcm:8.4.0] /home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/8.4.0/AndroidManifest.xml:21:22-79
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-measurement/8.4.0/AndroidManifest.xml:22:5-79
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-measurement/8.4.0/AndroidManifest.xml:22:22-76
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-measurement/8.4.0/AndroidManifest.xml:24:5-67
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-measurement/8.4.0/AndroidManifest.xml:24:22-65
+provider#com.google.android.gms.measurement.AppMeasurementContentProvider
+ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-measurement/8.4.0/AndroidManifest.xml:28:7-31:37
+	android:authorities
+		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-measurement/8.4.0/AndroidManifest.xml:29:11-76
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-measurement/8.4.0/AndroidManifest.xml:31:11-35
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-measurement/8.4.0/AndroidManifest.xml:30:11-90
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-measurement/8.4.0/AndroidManifest.xml:33:7-39:18
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-measurement/8.4.0/AndroidManifest.xml:35:11-33
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-measurement/8.4.0/AndroidManifest.xml:34:11-83
+intent-filter#com.google.android.gms.measurement.UPLOAD
+ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-measurement/8.4.0/AndroidManifest.xml:36:9-38:25
+action#com.google.android.gms.measurement.UPLOAD
+ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-measurement/8.4.0/AndroidManifest.xml:37:11-77
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-measurement/8.4.0/AndroidManifest.xml:37:19-75
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-measurement/8.4.0/AndroidManifest.xml:41:7-44:37
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-measurement/8.4.0/AndroidManifest.xml:43:11-33
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-measurement/8.4.0/AndroidManifest.xml:44:11-35
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-measurement/8.4.0/AndroidManifest.xml:42:11-82

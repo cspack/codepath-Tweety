@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardElevation="3dp">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <include layout="@layout/tweet_header"/>
+        <View
+                android:id="@+id/separator1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"/>
+
+        <TextView
+                tools:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvTweetText"
+                android:padding="6dp"
+                android:textColor="@color/twitter_black"
+                android:textColorLink="@color/twitter_primary"
+                android:linksClickable="true"
+                android:autoLink="web"
+                />
+        <ImageView
+                android:id="@+id/tweetPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:layout_margin="4dp"
+                android:scaleType="fitCenter"
+                />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

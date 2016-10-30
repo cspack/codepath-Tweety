@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/ic_compose.png",
+        "source": "/home/chris/dev/git/Tweety/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_compose.png"
+    },
+    {
+        "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/twitter_logo_white.png",
+        "source": "/home/chris/dev/git/Tweety/app/build/generated/res/pngs/debug/drawable-xxxhdpi/twitter_logo_white.png"
+    }
+]
