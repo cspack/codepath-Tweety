@@ -57,7 +57,10 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+- Adding save/restore state to keep recyclerview position was fun, I, once again, should have searched codepath before implementing it, because I figured it out on my own then found the guide for it after.
+- Using setTitle with a collapsing toolbar layout wouldn't persist after rotate, so I switched to a custom View.
+- I wasted a significant amount of time fixing my DbFlow tables so that they would paginate properly (without duping), now it seems OK.
+- I'm glad I did a lot of this refactoring last week! Or else it would have taken too much time.
 
 ## Open-source libraries used
 
