@@ -227,4 +227,8 @@ public class UserModel extends BaseModel {
   public static UserModel byId(String id) {
     return new Select().from(UserModel.class).where(UserModel_Table.id.eq(id)).querySingle();
   }
+  public static UserModel byScreenName(String screenName) {
+    return new Select().from(UserModel.class).where(UserModel_Table.screenName.eq(screenName))
+        .querySingle();
+  }
 }

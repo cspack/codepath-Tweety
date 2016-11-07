@@ -34,6 +34,7 @@ import com.squareup.picasso.Picasso;
 
 import jp.wasabeef.picasso.transformations.RoundedCornersTransformation;
 
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.math.BigInteger;
@@ -122,15 +123,25 @@ public class  TweetListAdapter extends RecyclerView.Adapter<TweetListAdapter.Vie
           if (NetworkUtil.isNetworkAvailable(v.getContext())) {
             TweetModel tweet = getItem(getAdapterPosition());
             if (tweet == null) return;
+            final boolean shouldBeRetweeted = !tweet.isRetweeted();
             TwitterApplication.getRestClient().postRetweet(
-                tweet.getId(), !tweet.isRetweeted(), new JsonHttpResponseHandler() {
+                tweet.getId(), shouldBeRetweeted, new JsonHttpResponseHandler() {
                   @Override
                   public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
-                    TweetModel newTweet = new TweetModel(response);
-                    newTweet.update();
-                    int id = findTweetPositionById(newTweet.getId());
+                    TweetModel origTweet = null;
+                    try {
+                      if (shouldBeRetweeted) {
+                        origTweet = new TweetModel(
+                            response.getJSONObject("retweeted_status"));
+                      } else {
+                        origTweet = new TweetModel(response);
+                      }
+                    } catch (JSONException e) {
+                      e.printStackTrace();
+                    }
+                    int id = findTweetPositionById(origTweet.getId());
                     if (id != -1) {
-                      tweetList.updateItemAt(id, newTweet);
+                      tweetList.updateItemAt(id, origTweet);
                     } else {
                       if (listener != null) listener.showError(
                           SnackbarUtil.SnackbarErrorType.INTERNAL, null);
@@ -217,7 +228,7 @@ public class  TweetListAdapter extends RecyclerView.Adapter<TweetListAdapter.Vie
       // Ignore, this can happen at load time.
       return;
     }
-    TweetHeaderUtil.PopulateTweetBinding(tweet, true, true, holder.binding);
+    TweetHeaderUtil.PopulateTweetBinding(tweet, true, true, holder.binding, listener);
   }
 
   @Override

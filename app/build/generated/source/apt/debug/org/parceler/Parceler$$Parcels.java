@@ -10,7 +10,7 @@ import com.cspack.tweety.models.TweetModel$$Parcelable;
 import com.cspack.tweety.models.UserModel;
 import com.cspack.tweety.models.UserModel$$Parcelable;
 
-@Generated(value = "org.parceler.ParcelAnnotationProcessor", date = "2016-11-06T01:28-0800")
+@Generated(value = "org.parceler.ParcelAnnotationProcessor", date = "2016-11-06T15:59-0800")
 @SuppressWarnings({
     "unchecked",
     "deprecation"
@@ -23,8 +23,8 @@ public class Parceler$$Parcels
 
     public Parceler$$Parcels() {
         map$$0 .put(TweetListModel.class, new Parceler$$Parcels.TweetListModel$$Parcelable$$0());
-        map$$0 .put(TweetModel.class, new Parceler$$Parcels.TweetModel$$Parcelable$$0());
         map$$0 .put(UserModel.class, new Parceler$$Parcels.UserModel$$Parcelable$$0());
+        map$$0 .put(TweetModel.class, new Parceler$$Parcels.TweetModel$$Parcelable$$0());
     }
 
     public Map<Class, org.parceler.Parcels.ParcelableFactory> get() {

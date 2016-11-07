@@ -17,7 +17,9 @@ import android.widget.TextView;
 import com.cspack.tweety.R;
 import com.cspack.tweety.databinding.ListTwitterBinding;
 import com.cspack.tweety.databinding.TweetHeaderBinding;
+import com.cspack.tweety.interfaces.TweetControllerInteractionListener;
 import com.cspack.tweety.interfaces.ZoomThumbnailInterfaceListener;
+import com.cspack.tweety.models.TweetListModel;
 import com.cspack.tweety.models.TweetModel;
 import com.cspack.tweety.models.UserModel;
 import com.squareup.picasso.Callback;
@@ -26,6 +28,7 @@ import com.squareup.picasso.Picasso;
 import jp.wasabeef.picasso.transformations.RoundedCornersTransformation;
 
 import java.text.NumberFormat;
+import java.util.regex.Pattern;
 
 /**
  * Util for abstracting implementation details of Tweet UIs.
@@ -48,7 +51,8 @@ public class TweetHeaderUtil {
   public static void PopulateTweetBinding(TweetModel tweet,
                                           boolean showImage,
                                           boolean showFooterRow,
-                                          final ListTwitterBinding binding) {
+                                          final ListTwitterBinding binding,
+                                          final TweetControllerInteractionListener listener) {
     PopulateTweetHeaderBinding(tweet.getUser(), binding.tweetHeaderInclude);
     binding.tweetHeaderInclude.tvTweetAge.setText(
         TimestampUtil.GetRelativeTimeAgo(tweet.getCreatedAt()));
@@ -79,7 +83,18 @@ public class TweetHeaderUtil {
       }
     }
     binding.tvTweetText.setText(tweet.getText());
-
+    // Don't highlight tweet text if we can't handle clicks.
+    if (listener != null) {
+      new PatternEditableBuilder().
+          addPattern(Pattern.compile("\\@(\\w+)"), R.color.twitter_primary,
+              new PatternEditableBuilder.SpannableClickedListener() {
+                @Override
+                public void onSpanClicked(String text) {
+                  // Do something here
+                  listener.startAction(TweetListModel.PageType.USER, text);
+                }
+              }).into(binding.tvTweetText);
+    }
     if (showFooterRow) {
       binding.footerRow.setVisibility(View.VISIBLE);
       binding.tvRetweets.setText(NumberFormat.getInstance().format(tweet.getRetweetCount()));

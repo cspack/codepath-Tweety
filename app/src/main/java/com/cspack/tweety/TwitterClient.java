@@ -41,8 +41,7 @@ public class TwitterClient extends OAuthBaseClient {
                            JsonHttpResponseHandler handler) {
     String apiUrl = getApiUrl(url);
     RequestParams params = new RequestParams();
-    // Load 25 tweets if it's a first load, otherwise load ALL new tweets (up to 200).
-    params.put("count", minId == null ? 25 : 200);
+    params.put("count", 200);
     params.put("contributor_details", "true");
     // TODO: configure this, it allows retweets.
     params.put("include_rts", "true");

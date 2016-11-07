@@ -11,7 +11,7 @@ import com.raizlabs.android.dbflow.sql.migration.AlterTableMigration;
           foreignKeysSupported = true)
 public class TwitterDatabase {
   // Renaming because uninstalling app apparently doesn't delete the db file... wat.
-  public static final String NAME = "TwitterDB";
+  public static final String NAME = "TwitterWeek4Final";
   public static final int VERSION = 4;
 
   @Migration(version = 2, database = TwitterDatabase.class)

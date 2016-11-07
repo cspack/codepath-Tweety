@@ -165,7 +165,7 @@ public class ComposeFragment extends DialogFragment {
       ListTwitterBinding binding = ListTwitterBinding.bind(tweetCard);
       replyTweetFrame.removeAllViews();  // just to be careful.
       replyTweetFrame.addView(tweetCard);
-      TweetHeaderUtil.PopulateTweetBinding(referenceTweet, false, false, binding);
+      TweetHeaderUtil.PopulateTweetBinding(referenceTweet, false, false, binding, null);
     }
     return builder.create();
   }

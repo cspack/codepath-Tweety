@@ -11,7 +11,7 @@ import org.parceler.Generated;
 import org.parceler.ParcelWrapper;
 import org.parceler.ParcelerRuntimeException;
 
-@Generated(value = "org.parceler.ParcelAnnotationProcessor", date = "2016-11-06T01:28-0800")
+@Generated(value = "org.parceler.ParcelAnnotationProcessor", date = "2016-11-06T15:59-0800")
 @SuppressWarnings({
     "unchecked",
     "deprecation"
@@ -22,7 +22,7 @@ public class UserModel$$Parcelable
 
     private com.cspack.tweety.models.UserModel userModel$$0;
     @SuppressWarnings("UnusedDeclaration")
-    public final static UserModel$$Parcelable.Creator$$0 CREATOR = new UserModel$$Parcelable.Creator$$0();
+    public final static UserModel$$Parcelable.Creator$$2 CREATOR = new UserModel$$Parcelable.Creator$$2();
 
     public UserModel$$Parcelable(com.cspack.tweety.models.UserModel userModel$$2) {
         userModel$$0 = userModel$$2;
@@ -107,7 +107,7 @@ public class UserModel$$Parcelable
         return userModel$$3;
     }
 
-    public final static class Creator$$0
+    public final static class Creator$$2
         implements Creator<UserModel$$Parcelable>
     {
 

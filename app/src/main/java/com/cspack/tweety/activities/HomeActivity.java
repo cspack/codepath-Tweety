@@ -25,6 +25,7 @@ import android.widget.ImageView;
 import com.cspack.tweety.R;
 import com.cspack.tweety.TwitterApplication;
 import com.cspack.tweety.TwitterClient;
+import com.cspack.tweety.TwitterDatabase;
 import com.cspack.tweety.adapters.HomeFragmentPagerAdapter;
 import com.cspack.tweety.fragments.ComposeFragment;
 import com.cspack.tweety.interfaces.TweetControllerInteractionListener;
@@ -34,8 +35,14 @@ import com.cspack.tweety.models.TweetModel;
 import com.cspack.tweety.models.UserModel;
 import com.cspack.tweety.util.SnackbarUtil;
 import com.cspack.tweety.util.ZoomUtil;
+import com.loopj.android.http.JsonHttpResponseHandler;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 import org.parceler.Parcels;
+
+import cz.msebera.android.httpclient.Header;
 
 import static com.cspack.tweety.models.TweetListModel.PageType.HOME;
 import static com.cspack.tweety.models.TweetListModel.PageType.TWEET_REPLY;
@@ -142,7 +149,34 @@ public class HomeActivity extends AppCompatActivity
   public void startAction(TweetListModel.PageType page, String pageTypeRefId) {
     switch (page) {
       case USER:
-        launchUserProfile(UserModel.byId(pageTypeRefId));
+        if (pageTypeRefId.charAt(0) == '@') {
+          UserModel user = UserModel.byScreenName(pageTypeRefId.substring(1));
+          if (user == null) {
+            // You need to find this user if it isn't familiar.
+            TwitterApplication.getRestClient().lookupScreenName(pageTypeRefId.substring(1),
+                new JsonHttpResponseHandler() {
+                  @Override
+                  public void onSuccess(int statusCode, Header[] headers, JSONArray response) {
+                    if (response.length() != 1) {
+                      showError(SnackbarUtil.SnackbarErrorType.INTERNAL, null);
+                    } else {
+                      try {
+                        UserModel user = new UserModel(response.getJSONObject(0));
+                        user.save();
+                        launchUserProfile(user);
+                      } catch (JSONException e) {
+                        e.printStackTrace();
+                        showError(SnackbarUtil.SnackbarErrorType.INTERNAL, null);
+                      }
+                    }
+                  }
+                });
+          } else {
+            launchUserProfile(user);
+          }
+        } else {
+          launchUserProfile(UserModel.byId(pageTypeRefId));
+        }
         break;
       case TWEET_REPLY:
         ComposeFragment fragment = ComposeFragment.newInstance(

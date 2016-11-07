@@ -84,19 +84,23 @@ public class TweetStreamFragment extends Fragment {
     super.onResume();
   }
 
-  public void loadNewerTweets() {
-    TweetListModel.getMostRecentTweetAsync(pageType, pageTypeRefId,
-        new QueryTransaction.QueryResultSingleCallback<TweetListModel>() {
-          @Override
-          public void onSingleQueryResult(QueryTransaction transaction,
-                                          @Nullable TweetListModel o) {
-            String minId = null;
-            if (o != null) {
-              minId = new BigInteger(o.getTweet().getId()).subtract(BigInteger.ONE).toString();
+  public void loadNewerTweets(boolean allTweets) {
+    if (allTweets == true) {
+      loadTweets(/*minId=*/null, /*maxId=*/null);
+    } else {
+      TweetListModel.getMostRecentTweetAsync(pageType, pageTypeRefId,
+          new QueryTransaction.QueryResultSingleCallback<TweetListModel>() {
+            @Override
+            public void onSingleQueryResult(QueryTransaction transaction,
+                                            @Nullable TweetListModel o) {
+              String minId = null;
+              if (o != null) {
+                minId = new BigInteger(o.getTweet().getId()).subtract(BigInteger.ONE).toString();
+              }
+              loadTweets(minId, /*maxId=*/null);
             }
-            loadTweets(minId, /*maxId=*/null);
-          }
-        });
+          });
+    }
   }
 
   public void loadOlderTweets(int totalItemCount) {
@@ -172,12 +176,18 @@ public class TweetStreamFragment extends Fragment {
           TweetListModel.associateAllAndSave(pageType, pageTypeRefId, newTweets);
           Log.v(TAG, "Tweet load associate all DONE: " +
               getTimestamp());
+
+          // NOTE: There is a weakness with this impl.
+          // The scroll range will never remove a tweet once it's added to DB.
+          // You should gather the max and min range of the tweet stream and erase
+          // all DB elements within this range.
+          // However, i'm out of time. So i'll just it alone for now.
         } catch (JSONException e) {
           listener.showError(SnackbarUtil.SnackbarErrorType.INTERNAL,
               new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                  loadNewerTweets();
+                  loadNewerTweets(false);
                 }
               });
 
@@ -196,7 +206,7 @@ public class TweetStreamFragment extends Fragment {
             new View.OnClickListener() {
               @Override
               public void onClick(View view) {
-                loadNewerTweets();
+                loadNewerTweets(false);
               }
             });
       }
@@ -250,7 +260,7 @@ public class TweetStreamFragment extends Fragment {
     swipeContainer.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
       @Override
       public void onRefresh() {
-        loadNewerTweets();
+        loadNewerTweets(false);
       }
     });
     if (savedInstanceState == null) {
@@ -268,10 +278,8 @@ public class TweetStreamFragment extends Fragment {
               }
               // Merged as a micro-optimization to reduce sorting.
               tweetAdapter.addAll(list);
-              // TODO: Replace this with a time-based refresh window (if refreshed > 1 minute ago).
-              if (tweetAdapter.getItemCount() == 0 || !BuildConfig.DEBUG) {
-                loadNewerTweets();
-              }
+              // On load always make a new request... we need to refresh old tweets.
+              loadNewerTweets(true);
             }
           });
     } else {

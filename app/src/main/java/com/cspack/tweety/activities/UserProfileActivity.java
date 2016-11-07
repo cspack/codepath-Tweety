@@ -38,14 +38,19 @@ import com.cspack.tweety.models.UserModel;
 import com.cspack.tweety.util.SnackbarUtil;
 import com.cspack.tweety.util.TweetHeaderUtil;
 import com.cspack.tweety.util.ZoomUtil;
+import com.loopj.android.http.JsonHttpResponseHandler;
 import com.squareup.picasso.Picasso;
 
 import jp.wasabeef.picasso.transformations.RoundedCornersTransformation;
 
+import org.json.JSONArray;
+import org.json.JSONException;
 import org.parceler.Parcels;
 import org.w3c.dom.Text;
 
 import java.text.NumberFormat;
+
+import cz.msebera.android.httpclient.Header;
 
 import static com.cspack.tweety.models.TweetListModel.PageType.HOME;
 import static com.cspack.tweety.models.TweetListModel.PageType.TWEET_REPLY;
@@ -291,6 +296,13 @@ public class UserProfileActivity extends AppCompatActivity
     }
   }
 
+  private void launchUserProfile(UserModel newUser) {
+    setUserMenu(newUser);
+    getSupportFragmentManager().beginTransaction()
+        .replace(R.id.bodyFragment, TweetStreamFragment.newInstance(USER, newUser.getId()))
+        .addToBackStack(newUser.getId())
+        .commit();
+  }
   @Override
   public void startAction(TweetListModel.PageType page, String pageTypeRefId) {
     switch (page) {
@@ -298,12 +310,34 @@ public class UserProfileActivity extends AppCompatActivity
         if (pageTypeRefId.equals(theirUser.getId())) {
           return;
         }
-        UserModel newUser = UserModel.byId(pageTypeRefId);
-        setUserMenu(newUser);
-        getSupportFragmentManager().beginTransaction()
-            .replace(R.id.bodyFragment, TweetStreamFragment.newInstance(page, pageTypeRefId))
-            .addToBackStack(pageTypeRefId)
-            .commit();
+        if (pageTypeRefId.charAt(0) == '@') {
+          UserModel user = UserModel.byScreenName(pageTypeRefId.substring(1));
+          if (user == null) {
+            // You need to find this user if it isn't familiar.
+            TwitterApplication.getRestClient().lookupScreenName(pageTypeRefId.substring(1),
+                new JsonHttpResponseHandler() {
+                  @Override
+                  public void onSuccess(int statusCode, Header[] headers, JSONArray response) {
+                    if (response.length() != 1) {
+                      showError(SnackbarUtil.SnackbarErrorType.INTERNAL, null);
+                    } else {
+                      try {
+                        UserModel user = new UserModel(response.getJSONObject(0));
+                        user.save();
+                        launchUserProfile(user);
+                      } catch (JSONException e) {
+                        e.printStackTrace();
+                        showError(SnackbarUtil.SnackbarErrorType.INTERNAL, null);
+                      }
+                    }
+                  }
+                });
+          } else {
+            launchUserProfile(user);
+          }
+        } else {
+          launchUserProfile(UserModel.byId(pageTypeRefId));
+        }
         break;
       case TWEET_REPLY:
         ComposeFragment fragment = ComposeFragment.newInstance(

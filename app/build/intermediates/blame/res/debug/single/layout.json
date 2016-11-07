@@ -48,12 +48,12 @@
         "source": "/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/abc_activity_chooser_view.xml"
     },
     {
-        "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/layout/notification_template_big_media_custom.xml",
-        "source": "/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/notification_template_big_media_custom.xml"
-    },
-    {
         "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_checkbox.xml",
         "source": "/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/layout/notification_template_big_media_custom.xml",
+        "source": "/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/notification_template_big_media_custom.xml"
     },
     {
         "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/layout/notification_action_tombstone.xml",

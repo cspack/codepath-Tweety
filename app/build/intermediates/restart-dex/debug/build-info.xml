@@ -5,7 +5,7 @@
     density="560dpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="51457689130587"
+    timestamp="58932329128757"
     token="7785316472525716141"
     verifier="COLD_SWAP_REQUESTED" >
 
@@ -22,61 +22,41 @@
         name="verifier"
         duration="0" />
 
-    <artifact
-        location="/home/chris/dev/git/Tweety/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
-        type="RESOURCES" />
-    <artifact
-        location="/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex"
-        type="DEX" />
-    <artifact
-        location="/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_8/classes.dex"
-        type="DEX" />
-    <artifact
-        location="/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex"
-        type="DEX" />
-
     <build
-        timestamp="41301608204532"
+        timestamp="55656191373993"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/home/chris/dev/git/Tweety/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
     </build>
     <build
-        timestamp="50367302992940"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_0/classes.dex"
-            type="DEX" />
+        timestamp="58181345945860"
+        verifier="CLASS_ADDED" >
         <artifact
             location="/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_2/classes.dex"
+            type="DEX" />
+        <artifact
+            location="/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex"
+            type="DEX" />
+    </build>
+    <build
+        timestamp="58799436721246"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex"
+            type="DEX" />
+        <artifact
+            location="/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex"
+            type="DEX" />
+        <artifact
+            location="/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_8/classes.dex"
             type="DEX" />
         <artifact
             location="/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7/classes.dex"
             type="DEX" />
     </build>
     <build
-        timestamp="51356824651500"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex"
-            type="DEX" />
-    </build>
-    <build
-        timestamp="51457689130587"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="/home/chris/dev/git/Tweety/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
-            type="RESOURCES" />
-        <artifact
-            location="/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_8/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex"
-            type="DEX" />
-    </build>
+        timestamp="58932329128757"
+        verifier="COLD_SWAP_REQUESTED" />
 
 </instant-run>

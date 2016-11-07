@@ -28,12 +28,12 @@
         "source": "/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/color/abc_tint_spinner.xml"
     },
     {
-        "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/color/switch_thumb_material_light.xml",
-        "source": "/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/color/switch_thumb_material_light.xml"
-    },
-    {
         "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/color/abc_tint_switch_thumb.xml",
         "source": "/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/color/abc_tint_switch_thumb.xml"
+    },
+    {
+        "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/color/switch_thumb_material_light.xml",
+        "source": "/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/color/switch_thumb_material_light.xml"
     },
     {
         "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/color/design_tint_password_toggle.xml",

@@ -1,4 +1,4 @@
-#Sat Nov 05 23:39:49 PDT 2016
+#Sun Nov 06 15:07:59 PST 2016
 base.0=/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_69712ffffb908607ad5b10747752ff77c19d2b6f
 renamed.1=classes2.dex
 renamed.0=classes.dex
