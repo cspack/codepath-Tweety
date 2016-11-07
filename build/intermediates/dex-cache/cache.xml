@@ -7,17 +7,17 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="d994fde0cb6f36da78ecdb0dfa026b615539e50c">
+        sha1="9c9c644e8d1dcd899bb5a23e9bad3482d5820256">
         <dex dex="/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_69712ffffb908607ad5b10747752ff77c19d2b6f/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/jars/libs/internal_impl-24.2.0.jar"
+        jar="/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="771b3cc0e597b54da25f8086ba73180c59c6bc71">
-        <dex dex="/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.0_7b54558b4bfe58a80b0d80933ce821669bbc6191/classes.dex" />
+        sha1="26674000177e45447a0326a6ad84612761199a13">
+        <dex dex="/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.0.0_6ea1cc5cf616c9ba0a822310c312c7ea2bb051db/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -30,21 +30,30 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.0/jars/classes.jar"
+        jar="/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/jars/libs/internal_impl-25.0.0.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="d8bd2268fdcbfd52c76ade65d9900cd8def93a44">
-        <dex dex="/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-24.2.0_b3f88a3a8ff42a82ed5219cdd1a8da67529b3058/classes.dex" />
+        sha1="665d21a8a069c96b4d9e8b434f5096d865b4e261">
+        <dex dex="/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_f1999ca78fe5f53379f5bfa4add8d5ab910c5d36/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.0/jars/libs/internal_impl-24.2.0.jar"
+        jar="/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.8.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="60d7b23621d31e6f42f4f76f16af467e57a20cda">
-        <dex dex="/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.0_defbf151da1c66da23ee591abd09e20d38159c4f/classes.dex" />
+        sha1="7e92aadd0697922316d1395c1887a23aebec640a">
+        <dex dex="/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-9.8.0_bc3a969a30873179d8319ac8c0ef7ccc34de6a70/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.0.0_e005284c30050ef7d4e8c9a6d8b057dbcca6df4f/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -57,12 +66,39 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/jars/classes.jar"
+        jar="/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/jars/libs/internal_impl-25.0.0.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="8e673cdfadd8f2d98fdb2fda2285c30f6e449782">
-        <dex dex="/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-8.4.0_616182c1300337ab75932b2f01ebcf665e14b92e/classes.dex" />
+        sha1="ee5faf4dee5b6a4364bf51587871047dde7c703a">
+        <dex dex="/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_1dd221d3b98e825830ee67516d991855daa369b4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="9f6d236bac26d02b410e4ee186ba517ace5ee661">
+        <dex dex="/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-9.8.0_11fceb04b98ea3e3a5e1f97c195e58204bee4dba/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="4ccbcda5c72027c7f7c14be9ff8640d9cb0d8da0">
+        <dex dex="/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.0.0_9fd1694bf285f37297525900471b35a56aedfd1d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="8bc45ce1f63d1a391fd38b32a201be5a42f9c95d">
+        <dex dex="/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.0.0_7f11fc64752b804092d510b25f2c4c510d218649/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -75,6 +111,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="e3234cd25e23069abd48ecd2117bc0e8011bf45a">
+        <dex dex="/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appindexing-9.8.0_a2717f0378571c58b1899505de90b6f64a46369c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.codepath.libraries/android-oauth-handler/1.1.0/jars/libs/codepath-utils.jar"
         jumboMode="true"
         optimize="true"
@@ -84,12 +129,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/24.2.0/jars/classes.jar"
+        jar="/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="96e33a7aaee00ab64270e2a9887b8f9ef32c8b73">
-        <dex dex="/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-cardview-v7-24.2.0_bfc99e18a373b3bb6cc67528109f54f9cf5a125f/classes.dex" />
+        sha1="75b1f366ff0bbc78f8b1f7cf0dc82e7c53afef6a">
+        <dex dex="/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.0.0_a24b01602208f154c5581ca18129af1e775a6ab0/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -102,30 +147,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/jars/classes.jar"
+        jar="/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.8.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="fef2b3e4b6b1b0e5fe7b69fa137a5fa55a3182ab">
-        <dex dex="/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-8.4.0_f2a2a27e7de82c67cb1dfb43157a763933f054bd/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="fcc945a86ebcbf527429acb8216ec7dae2c06417">
-        <dex dex="/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-24.2.0_6bf07595adbed09cf75a64635d9ca522b7887b91/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.4.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="65d086ee9daaf87b5af62ad24471edafa433354c">
-        <dex dex="/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appindexing-8.4.0_a81cc98daa2c4753fa1b9d3ec2145d06ecf0d34c/classes.dex" />
+        sha1="bf2e1838e4428616c1aa26edf43de72b5b99bf84">
+        <dex dex="/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tasks-9.8.0_3c18292d7bf7a4eaca006a146271d185f73aa79e/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -138,39 +165,39 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.android.support/design/24.2.0/jars/classes.jar"
+        jar="/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.android.databinding/library/1.2.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="23eb0d2998a782213b56168cbf23a0688b9111d9">
-        <dex dex="/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-24.2.0_7b57681ec7ab8561be5db91f6b260039ab8a4260/classes.dex" />
+        sha1="957dc30b1495f8689271e00d56ab09cc9192df02">
+        <dex dex="/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.databinding-library-1.2.1_5e8ba01c411fdc1fd44cecafb74c3e7623d193b0/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.0/jars/classes.jar"
+        jar="/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.android.support/transition/25.0.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="c84e216d9bf618464d6b9564d71d9a656433e7c4">
-        <dex dex="/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-24.2.0_84ff1dbc2881458a02e41dd880daf290fb05140a/classes.dex" />
+        sha1="0c6d948e6cb9ea6f535d175fb61ba2930719c0e9">
+        <dex dex="/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-transition-25.0.0_9200e4877784c9087ded3a9185dc9e340d385d9f/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.0/jars/libs/internal_impl-24.2.0.jar"
+        jar="/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.8.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="6e02e34594ebe9c0501ffda8dd48497f81b82977">
-        <dex dex="/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.0_63b5ec9569186f3a59a0ab1c0a2ac5044b0570bd/classes.dex" />
+        sha1="c61641e333fa88da21758bab8cc28ee16604b05f">
+        <dex dex="/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-common-9.8.0_f8a5562ec0230077d79a4294e4791a24257c204d/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.0/jars/libs/internal_impl-24.2.0.jar"
+        jar="/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.android.databinding/adapters/1.2.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="045be695d968dd707691cc55d23746dbf8cf569a">
-        <dex dex="/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.0_019e80f91d759514f1f06911ecd57f00a74a1ff6/classes.dex" />
+        sha1="c56d29136c2257f63f08c29c4e739efb03b06c7d">
+        <dex dex="/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.databinding-adapters-1.2.1_eb9b85b4b99208148c3b9a78feb23cb02c9ba275/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -183,39 +210,57 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.0/jars/classes.jar"
+        jar="/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="f3ee23ef25c9a8fe3d40246d0b7097267963a612">
-        <dex dex="/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.2.0_26711690b5952199e50a0e731d89bee188c78925/classes.dex" />
+        sha1="07daa0b6e1d455c82a38422ffe287c18823d339a">
+        <dex dex="/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.0.0_fca9b9464b9c52210041100620f0b120b8a37859/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/8.4.0/jars/classes.jar"
+        jar="/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/9.8.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="2d7fe76982677315c4dc4edfb459c8ca718a9d4c">
-        <dex dex="/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-gcm-8.4.0_766b8a79417f7eca4a31fa4e22c1c2ab22b5d4f6/classes.dex" />
+        sha1="9dae58326f6f6a515022468cce56dd04ec3b9fdb">
+        <dex dex="/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-gcm-9.8.0_e3006f213b4bacf5ea9fbb00119a7eb7bb766a35/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/chris/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/24.2.1/support-annotations-24.2.1.jar"
+        jar="/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/25.0.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
-        <dex dex="/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.2.1_08896ce43720531325cea6a94c82e94ac88e1eec/classes.dex" />
+        sha1="8a372c4191f80489770a231f7be4820b204b886a">
+        <dex dex="/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-cardview-v7-25.0.0_d62979401180f9b3a0c2ab3820a03b022adfc9d1/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.0/jars/classes.jar"
+        jar="/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/jars/libs/internal_impl-25.0.0.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="6eb9107eb34d2fe2b020662b7fbbec991dcba846">
-        <dex dex="/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-24.2.0_f49be563fc4b7739a5bd9b9cbd12d3c1465d5e04/classes.dex" />
+        sha1="3b61a70884adaf0be3fc06c70c801e3e6df13133">
+        <dex dex="/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_ab16dbcd04e9d53735b9b3202c1e561250f05021/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/chris/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/25.0.0/support-annotations-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="a22d2cc94da87b254451fa8ed28afc30b4653773">
+        <dex dex="/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.0.0_0d820ee657f3c2a7d8dbf9ad3715b63c84110ea9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.android.support/design/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="26384be22ddc74cfe197ebda9edbc7d1fd8bd537">
+        <dex dex="/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-25.0.0_44ef9b464fb50be0fd7338372dd54a339eea25a5/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -237,21 +282,30 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/jars/classes.jar"
+        jar="/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="c3c638be6e650b165ab9ae144857b64e82787fad">
-        <dex dex="/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.2.0_87bcac1e9163a1f5ea58fc2f5af8fa403824f54b/classes.dex" />
+        sha1="d29714cc76b38157e3cbd034c66e1ec808eb4c19">
+        <dex dex="/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.0.0_1e4dfd6a1f70761f035f7d4635f34302786f2b1c/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.0/jars/libs/internal_impl-24.2.0.jar"
+        jar="/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.0.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="032a4b53def5e2ceedfc2e793b126c0163cfa1dd">
-        <dex dex="/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.0_4dacd7bba9839c98524f166f9422d517a6257756/classes.dex" />
+        sha1="5e497d60f0cb6ce87c458ac5420a46d0fed49bd0">
+        <dex dex="/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-25.0.0_0f7dfafdb91c3e593a957a67db21a744b63d7359/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_292eb8a60e08370e0c8a580442b6b8ccc22df709/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -264,30 +318,21 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.0/jars/classes.jar"
+        jar="/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="beac40bcc8a320a896dd15f5109cfcaea5e1e0e3">
-        <dex dex="/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.2.0_b0fd286e5deedff13c880c2af8e4e4f1f8954f71/classes.dex" />
+        sha1="53a420cd4f49274db6bd43475f8006ba67ef6bbd">
+        <dex dex="/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.0.0_47d451ffa4732ed4f6e039f1b28c78188e60278e/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-measurement/8.4.0/jars/classes.jar"
+        jar="/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-iid/9.8.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="613298b7aa012f121ce542881c0a599ebd8078f2">
-        <dex dex="/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-measurement-8.4.0_bf30c53b852311f38d06b67b624cf74421e675c8/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="45f5eda279825ff470e3f51019d374d1ef61e000">
-        <dex dex="/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.2.0_73ba8a28f790c7a7aabd14b31144f46000a24773/classes.dex" />
+        sha1="85299bf1924dde0200109a58033c5ef84ecb6991">
+        <dex dex="/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-iid-9.8.0_05014a8f284a88649d1edd3f2cd2e546f006129a/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -297,6 +342,15 @@
         revision="24.0.3"
         sha1="7becf15dad3e845f24b2191034be3ca4c6c31249">
         <dex dex="/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.github.Raizlabs.DBFlow-dbflow-4.0.0-beta1_e2f9e3f640ac3b7ba4b2167b9b68d730f6d201d8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="f2e3b9bc1ec25f652e8007ce7774c991e38f6a00">
+        <dex dex="/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_bbbad9083d2a7cf60624d81dcba7c88abc756e47/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -318,15 +372,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="c755536e5a100d9c76c8ea0b72f76c018f7a9de2">
-        <dex dex="/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-24.2.0_dff9b5cb96d7ca6096325fd0999f425511c11941/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/chris/.gradle/caches/modules-2/files-2.1/com.github.Raizlabs.DBFlow/dbflow-core/4.0.0-beta1/ce9d2f83c5f824ef90793e6e5353570a64cce211/dbflow-core-4.0.0-beta1.jar"
         jumboMode="true"
         optimize="true"
@@ -336,11 +381,20 @@
     </item>
     <item
         is-multidex="true"
+        jar="/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="76fb65a4b41ea42dab8a1310ed772a2420c96b52">
+        <dex dex="/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.0.0_ba1d5602ffea437785200c6e9727daf4f068b915/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/home/chris/dev/git/Tweety/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="707abf1df5dba91c01c9330dd5cfc05ca4cc8e10">
+        sha1="9a6961c6d28dc8bf468ac17be3a52529b38a1150">
         <dex dex="/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_6f1badd7c1426053f343a56eec1e040b960892d3/classes.dex" />
     </item>
     <item
@@ -354,12 +408,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/jars/classes.jar"
+        jar="/home/chris/.gradle/caches/modules-2/files-2.1/com.android.databinding/baseLibrary/2.2.2/5e227e2d794cf680dd34fb04dd564ce58d6c764d/baseLibrary-2.2.2.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="f9b41622897665678d31d78e57a361cb0cebcb0d">
-        <dex dex="/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-24.2.0_11048e50e2cc0bcd7a629b618f18a62be308d9ca/classes.dex" />
+        sha1="5e227e2d794cf680dd34fb04dd564ce58d6c764d">
+        <dex dex="/home/chris/dev/git/Tweety/app/build/intermediates/transforms/dex/debug/folders/1000/10/baseLibrary-2.2.2_84eb6790d43d1681397752ac9dfb5acb39b56c16/classes.dex" />
     </item>
 
 </items>

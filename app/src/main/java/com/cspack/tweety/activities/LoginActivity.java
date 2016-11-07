@@ -1,12 +1,6 @@
 package com.cspack.tweety.activities;
 
-import com.google.android.gms.appindexing.Action;
-import com.google.android.gms.appindexing.AppIndex;
-import com.google.android.gms.appindexing.Thing;
-import com.google.android.gms.common.api.GoogleApiClient;
-
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
@@ -18,8 +12,8 @@ import com.codepath.oauth.OAuthLoginActionBarActivity;
 import com.cspack.tweety.R;
 import com.cspack.tweety.TwitterApplication;
 import com.cspack.tweety.TwitterClient;
-import com.cspack.tweety.models.TweetListModel;
 import com.cspack.tweety.models.UserModel;
+import com.cspack.tweety.util.SnackbarUtil;
 import com.loopj.android.http.JsonHttpResponseHandler;
 
 import org.json.JSONObject;
@@ -32,6 +26,7 @@ public class LoginActivity extends OAuthLoginActionBarActivity<TwitterClient> {
   private Button btnLogin;
   private TextView tvLoginFailure;
   private ProgressBar progressBar;
+  private SnackbarUtil snackbarUtil;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +40,7 @@ public class LoginActivity extends OAuthLoginActionBarActivity<TwitterClient> {
       btnLogin.setVisibility(View.GONE);
       tvLoginFailure.setVisibility(View.GONE);
     }
+    snackbarUtil = new SnackbarUtil(findViewById(android.R.id.content));
   }
 
   @Override
@@ -59,15 +55,14 @@ public class LoginActivity extends OAuthLoginActionBarActivity<TwitterClient> {
     btnLogin.setVisibility(View.GONE);
     tvLoginFailure.setVisibility(View.GONE);
     // Lookup your user before continuing.
-    TwitterApplication.getRestClient().getUser(new JsonHttpResponseHandler() {
+    TwitterApplication.getRestClient().getYourUser(new JsonHttpResponseHandler() {
       @Override
       public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
         UserModel user = new UserModel(response);
         user.save();
-        Intent i = new Intent(LoginActivity.this, TwitterActivity.class);
-        i.putExtra(TwitterActivity.ARG_YOUR_USER, Parcels.wrap(user));
-        i.putExtra(TwitterActivity.ARG_PAGE_TYPE, TweetListModel.PageType.HOME);
-        startActivity(i);
+        Intent i = new Intent(LoginActivity.this, HomeActivity.class);
+        i.putExtra(HomeActivity.ARG_YOUR_USER, Parcels.wrap(user));
+        LoginActivity.this.startActivity(i);
       }
 
       @Override
@@ -82,6 +77,7 @@ public class LoginActivity extends OAuthLoginActionBarActivity<TwitterClient> {
   // i.e Display an error dialog or toast
   @Override
   public void onLoginFailure(Exception e) {
+    snackbarUtil.show(SnackbarUtil.SnackbarErrorType.LOGIN_FAILED, null);
     progressBar.setVisibility(View.GONE);
     btnLogin.setVisibility(View.VISIBLE);
     tvLoginFailure.setVisibility(View.VISIBLE);

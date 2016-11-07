@@ -6,5 +6,10 @@
 
     <dimen name="author_text_size">16sp</dimen>
     <dimen name="author_screenname_text_size">13sp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+
+    <dimen name="avatar_spacing">10dp</dimen>
+    <dimen name="avatar_width">80dp</dimen>
+    <dimen name="avatar_final_width">40dp</dimen>
 
 </resources>

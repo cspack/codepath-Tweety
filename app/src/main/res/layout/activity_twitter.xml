@@ -8,49 +8,28 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fitsSystemWindows="true"
-        tools:context="com.cspack.tweety.activities.TwitterActivity">
+        tools:context="com.cspack.tweety.activities.HomeActivity">
 
     <android.support.design.widget.AppBarLayout
+            android:id="@+id/appBarLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/twitter_primary">
-        <android.support.design.widget.CollapsingToolbarLayout
-                android:id="@+id/toolbarLayout"
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:background="@color/twitter_primary"
-                app:layout_scrollFlags="scroll|exitUntilCollapsed">
-            <ImageView
-                    android:id="@+id/ivBackground"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:scaleType="centerCrop"
-                    android:alpha="0.8"
-                    android:adjustViewBounds="true"
-                    app:layout_collapseMode="parallax"/>
-            <android.support.v7.widget.Toolbar
-                    android:id="@+id/tbMain"
-                    android:layout_width="match_parent"
-                    android:layout_height="?attr/actionBarSize"
-                    app:layout_collapseMode="pin" />
-        </android.support.design.widget.CollapsingToolbarLayout>
-    </android.support.design.widget.AppBarLayout>
+            android:background="@color/twitter_primary_light" />
 
-    <android.support.v4.widget.SwipeRefreshLayout
+    <android.support.v4.view.ViewPager
             xmlns:android="http://schemas.android.com/apk/res/android"
-            android:id="@+id/swipeContainer"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:layout_behavior="@string/appbar_scrolling_view_behavior">
-
-    <android.support.v7.widget.RecyclerView
-            android:id="@+id/rvTweets"
+            android:id="@+id/viewPager"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:layout_behavior="@string/appbar_scrolling_view_behavior"
             />
-    </android.support.v4.widget.SwipeRefreshLayout>
-
+    <FrameLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/bodyFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            />
     <android.support.design.widget.FloatingActionButton
             android:id="@+id/btnCompose"
             android:layout_width="wrap_content"
@@ -58,9 +37,20 @@
             android:visibility="gone"
             android:src="@drawable/ic_compose"
             android:tint="@color/twitter_gray_1c"
+            android:backgroundTint="@color/twitter_primary_dark"
             android:layout_margin="8dp"
-            app:layout_anchor="@id/swipeContainer"
+            app:layout_anchor="@id/bodyFragment"
             app:rippleColor="@color/twitter_primary_light"
             app:layout_anchorGravity="bottom|right|end"
             />
+
+    <ImageView
+            android:id="@+id/expanded_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible"
+            android:contentDescription="@string/description_zoom_touch_close"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            />
+
 </android.support.design.widget.CoordinatorLayout>

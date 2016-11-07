@@ -4,6 +4,8 @@ import android.app.Dialog;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
+import android.support.design.widget.TextInputEditText;
 import android.support.v4.app.DialogFragment;
 import android.support.v7.app.AlertDialog;
 import android.text.Editable;
@@ -11,12 +13,15 @@ import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.cspack.tweety.R;
 import com.cspack.tweety.TwitterApplication;
+import com.cspack.tweety.databinding.ListTwitterBinding;
+import com.cspack.tweety.databinding.TweetHeaderBinding;
 import com.cspack.tweety.models.TweetListModel;
 import com.cspack.tweety.models.TweetModel;
 import com.cspack.tweety.models.UserModel;
@@ -41,10 +46,14 @@ public class ComposeFragment extends DialogFragment {
   private TweetListModel.PageType pageType;
   private String pageTypeRefId;
   private UserModel user;
-  private EditText etCompose;
+  private UserModel theirUser;
+  @Nullable
+  private TweetModel referenceTweet;
+  private TextInputEditText etCompose;
   private TextView tvError;
   private Button btnSubmit;
   private ProgressBar loadProgress;
+  private FrameLayout replyTweetFrame;
 
   public interface OnComposeListener {
     void onComposerCompleted(boolean tweeted, TweetModel tweet);
@@ -57,6 +66,14 @@ public class ComposeFragment extends DialogFragment {
       pageType = TweetListModel.PageType.values()[getArguments().getInt(ARG_PAGE_TYPE)];
       pageTypeRefId = getArguments().getString(ARG_PAGE_TYPE_REF_ID);
       user = Parcels.unwrap(getArguments().getParcelable(ARG_USER));
+    }
+
+    if (pageType == TweetListModel.PageType.USER) {
+      theirUser = UserModel.byId(pageTypeRefId);
+    }
+    if (pageType == TweetListModel.PageType.TWEET_REPLY) {
+      referenceTweet = TweetModel.byId(pageTypeRefId);
+      theirUser = referenceTweet.getUser();
     }
   }
 
@@ -76,8 +93,9 @@ public class ComposeFragment extends DialogFragment {
   public Dialog onCreateDialog(Bundle savedInstanceState) {
     View view = getActivity().getLayoutInflater().inflate(R.layout.fragment_compose, null);
     tvError = (TextView) view.findViewById(R.id.tvError);
-    etCompose = (EditText) view.findViewById(R.id.etCompose);
+    etCompose = (TextInputEditText) view.findViewById(R.id.etCompose);
     loadProgress = (ProgressBar) view.findViewById(R.id.progressBar);
+    replyTweetFrame = (FrameLayout) view.findViewById(R.id.replyTweetFrame);
     etCompose.addTextChangedListener(new TextWatcher() {
       @Override
       public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -108,7 +126,7 @@ public class ComposeFragment extends DialogFragment {
       }
     });
 
-    etCompose = (EditText) view.findViewById(R.id.etCompose);
+    etCompose = (TextInputEditText) view.findViewById(R.id.etCompose);
     TextView tweetAuthor = (TextView) view.findViewById(R.id.tvAuthor);
     ImageView authorLogo = (ImageView) view.findViewById(R.id.imageAuthor);
     TweetHeaderUtil.PopulateAuthorTextView(user, tweetAuthor);
@@ -136,19 +154,19 @@ public class ComposeFragment extends DialogFragment {
     AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
     builder.setTitle(R.string.compose_dialog_title);
     builder.setView(view);
-      /*
-    builder.setNegativeButton(android.R.string.cancel, new DialogInterface.OnClickListener() {
-      @Override
-      public void onClick(DialogInterface dialog, int which) {
-        if (listener != null) listener.onComposerCompleted(false);
-        dialog.dismiss();
-      }
-    });
-    builder.setPositiveButton(R.string.tweet, new DialogInterface.OnClickListener() {
-      @Override
-      public void onClick(DialogInterface dialog, int which) {
-      }
-    });*/
+
+    if (theirUser != null && !theirUser.getId().equals(user.getId())) {
+      etCompose.setText("@" + theirUser.getScreenName() + " ");
+      etCompose.setSelection(etCompose.getText().length());
+    }
+    if (pageType == TweetListModel.PageType.TWEET_REPLY && referenceTweet != null) {
+      View tweetCard = getActivity().getLayoutInflater()
+          .inflate(R.layout.list_twitter, replyTweetFrame, false);
+      ListTwitterBinding binding = ListTwitterBinding.bind(tweetCard);
+      replyTweetFrame.removeAllViews();  // just to be careful.
+      replyTweetFrame.addView(tweetCard);
+      TweetHeaderUtil.PopulateTweetBinding(referenceTweet, false, false, binding);
+    }
     return builder.create();
   }
 
@@ -185,8 +203,15 @@ public class ComposeFragment extends DialogFragment {
     loadProgress.setVisibility(View.VISIBLE);
     etCompose.setEnabled(false);
     btnSubmit.setEnabled(false);
-    TwitterApplication.getRestClient().postTweet(etCompose.getText().toString(),
-        /*replyToPost=*/null, /*replyToUser=*/null, postResult);
-  }
 
+    String replyToPost = null;
+    String replyToUser = null;
+    if (theirUser != null) {
+      replyToUser = theirUser.getScreenName();
+    }
+    if (pageType == TweetListModel.PageType.TWEET_REPLY)
+      replyToPost = pageTypeRefId;
+    TwitterApplication.getRestClient().postTweet(etCompose.getText().toString(),
+        replyToPost, replyToUser, postResult);
+  }
 }

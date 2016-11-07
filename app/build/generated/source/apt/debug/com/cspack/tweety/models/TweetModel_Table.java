@@ -10,10 +10,12 @@ import com.raizlabs.android.dbflow.sql.language.ConditionGroup;
 import com.raizlabs.android.dbflow.sql.language.SQLite;
 import com.raizlabs.android.dbflow.sql.language.property.BaseProperty;
 import com.raizlabs.android.dbflow.sql.language.property.IProperty;
+import com.raizlabs.android.dbflow.sql.language.property.IntProperty;
 import com.raizlabs.android.dbflow.sql.language.property.Property;
 import com.raizlabs.android.dbflow.structure.ModelAdapter;
 import com.raizlabs.android.dbflow.structure.database.DatabaseStatement;
 import com.raizlabs.android.dbflow.structure.database.DatabaseWrapper;
+import java.lang.Boolean;
 import java.lang.Class;
 import java.lang.IllegalArgumentException;
 import java.lang.Override;
@@ -36,7 +38,19 @@ public final class TweetModel_Table extends ModelAdapter<TweetModel> {
 
   public static final Property<String> firstPhotoUrl = new Property<String>(TweetModel.class, "firstPhotoUrl");
 
-  public static final IProperty[] ALL_COLUMN_PROPERTIES = new IProperty[]{id,text,user_id,createdAt,firstPhotoUrl};
+  public static final IntProperty retweetCount = new IntProperty(TweetModel.class, "retweetCount");
+
+  public static final IntProperty favoritesCount = new IntProperty(TweetModel.class, "favoritesCount");
+
+  public static final Property<Boolean> favorited = new Property<Boolean>(TweetModel.class, "favorited");
+
+  public static final Property<Boolean> retweeted = new Property<Boolean>(TweetModel.class, "retweeted");
+
+  public static final Property<String> inReplyToStatusId = new Property<String>(TweetModel.class, "inReplyToStatusId");
+
+  public static final Property<String> inReplyToScreenName = new Property<String>(TweetModel.class, "inReplyToScreenName");
+
+  public static final IProperty[] ALL_COLUMN_PROPERTIES = new IProperty[]{id,text,user_id,createdAt,firstPhotoUrl,retweetCount,favoritesCount,favorited,retweeted,inReplyToStatusId,inReplyToScreenName};
 
   public TweetModel_Table(DatabaseHolder holder, DatabaseDefinition databaseDefinition) {
     super(databaseDefinition);
@@ -70,6 +84,24 @@ public final class TweetModel_Table extends ModelAdapter<TweetModel> {
       case "`firstPhotoUrl`":  {
         return firstPhotoUrl;
       }
+      case "`retweetCount`":  {
+        return retweetCount;
+      }
+      case "`favoritesCount`":  {
+        return favoritesCount;
+      }
+      case "`favorited`":  {
+        return favorited;
+      }
+      case "`retweeted`":  {
+        return retweeted;
+      }
+      case "`inReplyToStatusId`":  {
+        return inReplyToStatusId;
+      }
+      case "`inReplyToScreenName`":  {
+        return inReplyToScreenName;
+      }
       default:  {
         throw new IllegalArgumentException("Invalid column name passed. Ensure you are calling the correct table's column");
       }
@@ -99,6 +131,12 @@ public final class TweetModel_Table extends ModelAdapter<TweetModel> {
     }
     values.put("createdAt", model.createdAt != null ? model.createdAt : null);
     values.put("firstPhotoUrl", model.firstPhotoUrl != null ? model.firstPhotoUrl : null);
+    values.put("retweetCount", model.retweetCount);
+    values.put("favoritesCount", model.favoritesCount);
+    values.put("favorited", model.favorited ? 1 : 0);
+    values.put("retweeted", model.retweeted ? 1 : 0);
+    values.put("inReplyToStatusId", model.inReplyToStatusId != null ? model.inReplyToStatusId : null);
+    values.put("inReplyToScreenName", model.inReplyToScreenName != null ? model.inReplyToScreenName : null);
   }
 
   @Override
@@ -133,6 +171,20 @@ public final class TweetModel_Table extends ModelAdapter<TweetModel> {
     } else {
       statement.bindNull(5 + start);
     }
+    statement.bindLong(6 + start, model.retweetCount);
+    statement.bindLong(7 + start, model.favoritesCount);
+    statement.bindLong(8 + start, model.favorited ? 1 : 0);
+    statement.bindLong(9 + start, model.retweeted ? 1 : 0);
+    if (model.inReplyToStatusId != null)  {
+      statement.bindString(10 + start, model.inReplyToStatusId);
+    } else {
+      statement.bindNull(10 + start);
+    }
+    if (model.inReplyToScreenName != null)  {
+      statement.bindString(11 + start, model.inReplyToScreenName);
+    } else {
+      statement.bindNull(11 + start);
+    }
   }
 
   @Override
@@ -142,17 +194,17 @@ public final class TweetModel_Table extends ModelAdapter<TweetModel> {
 
   @Override
   public final String getInsertStatementQuery() {
-    return "INSERT INTO `TweetModel`(`id`,`text`,`user_id`,`createdAt`,`firstPhotoUrl`) VALUES (?,?,?,?,?)";
+    return "INSERT INTO `TweetModel`(`id`,`text`,`user_id`,`createdAt`,`firstPhotoUrl`,`retweetCount`,`favoritesCount`,`favorited`,`retweeted`,`inReplyToStatusId`,`inReplyToScreenName`) VALUES (?,?,?,?,?,?,?,?,?,?,?)";
   }
 
   @Override
   public final String getCompiledStatementQuery() {
-    return "INSERT INTO `TweetModel`(`id`,`text`,`user_id`,`createdAt`,`firstPhotoUrl`) VALUES (?,?,?,?,?)";
+    return "INSERT INTO `TweetModel`(`id`,`text`,`user_id`,`createdAt`,`firstPhotoUrl`,`retweetCount`,`favoritesCount`,`favorited`,`retweeted`,`inReplyToStatusId`,`inReplyToScreenName`) VALUES (?,?,?,?,?,?,?,?,?,?,?)";
   }
 
   @Override
   public final String getCreationQuery() {
-    return "CREATE TABLE IF NOT EXISTS `TweetModel`(`id` TEXT,`text` TEXT,`user_id` TEXT,`createdAt` TEXT,`firstPhotoUrl` TEXT, PRIMARY KEY(`id`)"+ ", FOREIGN KEY(`user_id`) REFERENCES " + FlowManager.getTableName(UserModel.class) + "(`id`) ON UPDATE NO ACTION ON DELETE NO ACTION" + ");";
+    return "CREATE TABLE IF NOT EXISTS `TweetModel`(`id` TEXT,`text` TEXT,`user_id` TEXT,`createdAt` TEXT,`firstPhotoUrl` TEXT,`retweetCount` INTEGER,`favoritesCount` INTEGER,`favorited` INTEGER,`retweeted` INTEGER,`inReplyToStatusId` TEXT,`inReplyToScreenName` TEXT, PRIMARY KEY(`id`)"+ ", FOREIGN KEY(`user_id`) REFERENCES " + FlowManager.getTableName(UserModel.class) + "(`id`) ON UPDATE NO ACTION ON DELETE NO ACTION" + ");";
   }
 
   @Override
@@ -188,6 +240,42 @@ public final class TweetModel_Table extends ModelAdapter<TweetModel> {
       model.firstPhotoUrl = cursor.getString(index_firstPhotoUrl);
     } else {
       model.firstPhotoUrl = null;
+    }
+    int index_retweetCount = cursor.getColumnIndex("retweetCount");
+    if (index_retweetCount != -1 && !cursor.isNull(index_retweetCount)) {
+      model.retweetCount = cursor.getInt(index_retweetCount);
+    } else {
+      model.retweetCount = 0;
+    }
+    int index_favoritesCount = cursor.getColumnIndex("favoritesCount");
+    if (index_favoritesCount != -1 && !cursor.isNull(index_favoritesCount)) {
+      model.favoritesCount = cursor.getInt(index_favoritesCount);
+    } else {
+      model.favoritesCount = 0;
+    }
+    int index_favorited = cursor.getColumnIndex("favorited");
+    if (index_favorited != -1 && !cursor.isNull(index_favorited)) {
+      model.favorited = cursor.getInt(index_favorited) == 1 ? true : false;
+    } else {
+      model.favorited = false;
+    }
+    int index_retweeted = cursor.getColumnIndex("retweeted");
+    if (index_retweeted != -1 && !cursor.isNull(index_retweeted)) {
+      model.retweeted = cursor.getInt(index_retweeted) == 1 ? true : false;
+    } else {
+      model.retweeted = false;
+    }
+    int index_inReplyToStatusId = cursor.getColumnIndex("inReplyToStatusId");
+    if (index_inReplyToStatusId != -1 && !cursor.isNull(index_inReplyToStatusId)) {
+      model.inReplyToStatusId = cursor.getString(index_inReplyToStatusId);
+    } else {
+      model.inReplyToStatusId = null;
+    }
+    int index_inReplyToScreenName = cursor.getColumnIndex("inReplyToScreenName");
+    if (index_inReplyToScreenName != -1 && !cursor.isNull(index_inReplyToScreenName)) {
+      model.inReplyToScreenName = cursor.getString(index_inReplyToScreenName);
+    } else {
+      model.inReplyToScreenName = null;
     }
   }
 

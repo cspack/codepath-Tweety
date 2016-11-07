@@ -4,147 +4,59 @@
         "source": "/home/chris/dev/git/Tweety/app/src/main/res/drawable-mdpi/ic_launcher.png"
     },
     {
-        "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/drawable-mdpi/common_google_signin_btn_text_dark_pressed.9.png",
-        "source": "/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable-mdpi/common_google_signin_btn_text_dark_pressed.9.png"
+        "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_reply.png",
+        "source": "/home/chris/dev/git/Tweety/app/build/generated/res/pngs/debug/drawable-mdpi/ic_reply.png"
     },
     {
-        "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/drawable-mdpi/common_full_open_on_phone.png",
-        "source": "/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable-mdpi/common_full_open_on_phone.png"
+        "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_star.png",
+        "source": "/home/chris/dev/git/Tweety/app/build/generated/res/pngs/debug/drawable-mdpi/ic_star.png"
     },
     {
-        "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/drawable-mdpi/common_google_signin_btn_text_light_disabled.9.png",
-        "source": "/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable-mdpi/common_google_signin_btn_text_light_disabled.9.png"
+        "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_reply_arrow.png",
+        "source": "/home/chris/dev/git/Tweety/app/build/generated/res/pngs/debug/drawable-mdpi/ic_reply_arrow.png"
+    },
+    {
+        "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_user_plus.png",
+        "source": "/home/chris/dev/git/Tweety/app/build/generated/res/pngs/debug/drawable-mdpi/ic_user_plus.png"
     },
     {
         "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/drawable-mdpi/twitter_logo_white.png",
         "source": "/home/chris/dev/git/Tweety/app/build/generated/res/pngs/debug/drawable-mdpi/twitter_logo_white.png"
     },
     {
-        "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/drawable-mdpi/common_plus_signin_btn_text_light_disabled.9.png",
-        "source": "/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable-mdpi/common_plus_signin_btn_text_light_disabled.9.png"
+        "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/drawable-mdpi/sentiment_sad.png",
+        "source": "/home/chris/dev/git/Tweety/app/build/generated/res/pngs/debug/drawable-mdpi/sentiment_sad.png"
     },
     {
-        "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/drawable-mdpi/common_plus_signin_btn_icon_light_disabled.9.png",
-        "source": "/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable-mdpi/common_plus_signin_btn_icon_light_disabled.9.png"
+        "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_home.png",
+        "source": "/home/chris/dev/git/Tweety/app/build/generated/res/pngs/debug/drawable-mdpi/ic_home.png"
     },
     {
-        "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/drawable-mdpi/common_plus_signin_btn_text_dark_disabled.9.png",
-        "source": "/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable-mdpi/common_plus_signin_btn_text_dark_disabled.9.png"
-    },
-    {
-        "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/drawable-mdpi/common_plus_signin_btn_icon_dark_disabled.9.png",
-        "source": "/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable-mdpi/common_plus_signin_btn_icon_dark_disabled.9.png"
-    },
-    {
-        "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/drawable-mdpi/common_plus_signin_btn_icon_dark_pressed.9.png",
-        "source": "/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable-mdpi/common_plus_signin_btn_icon_dark_pressed.9.png"
-    },
-    {
-        "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/drawable-mdpi/common_plus_signin_btn_text_light_focused.9.png",
-        "source": "/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable-mdpi/common_plus_signin_btn_text_light_focused.9.png"
-    },
-    {
-        "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/drawable-mdpi/common_google_signin_btn_icon_light_disabled.9.png",
-        "source": "/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable-mdpi/common_google_signin_btn_icon_light_disabled.9.png"
-    },
-    {
-        "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/drawable-mdpi/common_plus_signin_btn_icon_light_pressed.9.png",
-        "source": "/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable-mdpi/common_plus_signin_btn_icon_light_pressed.9.png"
-    },
-    {
-        "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/drawable-mdpi/common_google_signin_btn_icon_dark_normal.9.png",
-        "source": "/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable-mdpi/common_google_signin_btn_icon_dark_normal.9.png"
-    },
-    {
-        "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/drawable-mdpi/common_plus_signin_btn_text_dark_normal.9.png",
-        "source": "/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable-mdpi/common_plus_signin_btn_text_dark_normal.9.png"
-    },
-    {
-        "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/drawable-mdpi/common_google_signin_btn_icon_light_focused.9.png",
-        "source": "/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable-mdpi/common_google_signin_btn_icon_light_focused.9.png"
-    },
-    {
-        "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_compose.png",
-        "source": "/home/chris/dev/git/Tweety/app/build/generated/res/pngs/debug/drawable-mdpi/ic_compose.png"
-    },
-    {
-        "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/drawable-mdpi/common_google_signin_btn_text_light_focused.9.png",
-        "source": "/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable-mdpi/common_google_signin_btn_text_light_focused.9.png"
-    },
-    {
-        "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/drawable-mdpi/common_google_signin_btn_text_dark_disabled.9.png",
-        "source": "/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable-mdpi/common_google_signin_btn_text_dark_disabled.9.png"
-    },
-    {
-        "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/drawable-mdpi/common_google_signin_btn_text_light_pressed.9.png",
-        "source": "/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable-mdpi/common_google_signin_btn_text_light_pressed.9.png"
-    },
-    {
-        "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/drawable-mdpi/common_google_signin_btn_text_light_normal.9.png",
-        "source": "/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable-mdpi/common_google_signin_btn_text_light_normal.9.png"
-    },
-    {
-        "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/drawable-mdpi/common_google_signin_btn_icon_light_pressed.9.png",
-        "source": "/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable-mdpi/common_google_signin_btn_icon_light_pressed.9.png"
-    },
-    {
-        "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/drawable-mdpi/common_google_signin_btn_icon_dark_disabled.9.png",
-        "source": "/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable-mdpi/common_google_signin_btn_icon_dark_disabled.9.png"
-    },
-    {
-        "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/drawable-mdpi/common_google_signin_btn_icon_dark_focused.9.png",
-        "source": "/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable-mdpi/common_google_signin_btn_icon_dark_focused.9.png"
-    },
-    {
-        "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/drawable-mdpi/common_google_signin_btn_text_dark_normal.9.png",
-        "source": "/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable-mdpi/common_google_signin_btn_text_dark_normal.9.png"
-    },
-    {
-        "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/drawable-mdpi/common_plus_signin_btn_icon_light_normal.9.png",
-        "source": "/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable-mdpi/common_plus_signin_btn_icon_light_normal.9.png"
-    },
-    {
-        "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/drawable-mdpi/common_plus_signin_btn_text_light_normal.9.png",
-        "source": "/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable-mdpi/common_plus_signin_btn_text_light_normal.9.png"
-    },
-    {
-        "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/drawable-mdpi/common_google_signin_btn_text_dark_focused.9.png",
-        "source": "/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable-mdpi/common_google_signin_btn_text_dark_focused.9.png"
-    },
-    {
-        "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/drawable-mdpi/common_plus_signin_btn_icon_dark_focused.9.png",
-        "source": "/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable-mdpi/common_plus_signin_btn_icon_dark_focused.9.png"
-    },
-    {
-        "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/drawable-mdpi/common_plus_signin_btn_icon_light_focused.9.png",
-        "source": "/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable-mdpi/common_plus_signin_btn_icon_light_focused.9.png"
-    },
-    {
-        "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/drawable-mdpi/common_plus_signin_btn_icon_dark_normal.9.png",
-        "source": "/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable-mdpi/common_plus_signin_btn_icon_dark_normal.9.png"
-    },
-    {
-        "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/drawable-mdpi/common_plus_signin_btn_text_light_pressed.9.png",
-        "source": "/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable-mdpi/common_plus_signin_btn_text_light_pressed.9.png"
-    },
-    {
-        "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/drawable-mdpi/common_google_signin_btn_icon_light_normal.9.png",
-        "source": "/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable-mdpi/common_google_signin_btn_icon_light_normal.9.png"
+        "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_star_off.png",
+        "source": "/home/chris/dev/git/Tweety/app/build/generated/res/pngs/debug/drawable-mdpi/ic_star_off.png"
     },
     {
         "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/drawable-mdpi/twitter_logo_white_sm.png",
         "source": "/home/chris/dev/git/Tweety/app/build/generated/res/pngs/debug/drawable-mdpi/twitter_logo_white_sm.png"
     },
     {
-        "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/drawable-mdpi/common_google_signin_btn_icon_dark_pressed.9.png",
-        "source": "/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable-mdpi/common_google_signin_btn_icon_dark_pressed.9.png"
+        "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_twitter_logo_white_on_blue.png",
+        "source": "/home/chris/dev/git/Tweety/app/build/generated/res/pngs/debug/drawable-mdpi/ic_twitter_logo_white_on_blue.png"
     },
     {
-        "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/drawable-mdpi/common_plus_signin_btn_text_dark_pressed.9.png",
-        "source": "/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable-mdpi/common_plus_signin_btn_text_dark_pressed.9.png"
+        "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/drawable-mdpi/id_card.png",
+        "source": "/home/chris/dev/git/Tweety/app/build/generated/res/pngs/debug/drawable-mdpi/id_card.png"
     },
     {
-        "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/drawable-mdpi/common_plus_signin_btn_text_dark_focused.9.png",
-        "source": "/home/chris/dev/git/Tweety/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable-mdpi/common_plus_signin_btn_text_dark_focused.9.png"
+        "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_user_minus.png",
+        "source": "/home/chris/dev/git/Tweety/app/build/generated/res/pngs/debug/drawable-mdpi/ic_user_minus.png"
+    },
+    {
+        "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_retweet.png",
+        "source": "/home/chris/dev/git/Tweety/app/build/generated/res/pngs/debug/drawable-mdpi/ic_retweet.png"
+    },
+    {
+        "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_compose.png",
+        "source": "/home/chris/dev/git/Tweety/app/build/generated/res/pngs/debug/drawable-mdpi/ic_compose.png"
     }
 ]

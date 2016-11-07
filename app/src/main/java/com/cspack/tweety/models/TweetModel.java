@@ -13,6 +13,7 @@ import com.raizlabs.android.dbflow.structure.BaseModel;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.parceler.Parcel;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,6 +24,7 @@ import java.util.List;
  * https://github.com/pardom/ActiveAndroid/wiki/Creating-your-database-model
  * 
  */
+@Parcel
 @Table(database = TwitterDatabase.class)
 public class TweetModel extends BaseModel {
   @PrimaryKey
@@ -41,6 +43,27 @@ public class TweetModel extends BaseModel {
 
   @Column
   String firstPhotoUrl;
+
+  // V3: START.
+  @Column
+  int retweetCount;
+
+  @Column
+  int favoritesCount;
+
+  @Column
+  boolean favorited;
+
+  @Column
+  boolean retweeted;
+
+  @Column
+  String inReplyToStatusId;
+
+  @Column
+  String inReplyToScreenName;
+
+  // V3: END.
 
   public String getId() {
     return id;
@@ -82,6 +105,54 @@ public class TweetModel extends BaseModel {
     this.firstPhotoUrl = firstPhotoUrl;
   }
 
+  public int getRetweetCount() {
+    return retweetCount;
+  }
+
+  public void setRetweetCount(int retweetCount) {
+    this.retweetCount = retweetCount;
+  }
+
+  public int getFavoritesCount() {
+    return favoritesCount;
+  }
+
+  public void setFavoritesCount(int favoritesCount) {
+    this.favoritesCount = favoritesCount;
+  }
+
+  public boolean isFavorited() {
+    return favorited;
+  }
+
+  public void setFavorited(boolean favorited) {
+    this.favorited = favorited;
+  }
+
+  public boolean isRetweeted() {
+    return retweeted;
+  }
+
+  public void setRetweeted(boolean retweeted) {
+    this.retweeted = retweeted;
+  }
+
+  public String getInReplyToStatusId() {
+    return inReplyToStatusId;
+  }
+
+  public void setInReplyToStatusId(String inReplyToStatusId) {
+    this.inReplyToStatusId = inReplyToStatusId;
+  }
+
+  public String getInReplyToScreenName() {
+    return inReplyToScreenName;
+  }
+
+  public void setInReplyToScreenName(String inReplyToScreenName) {
+    this.inReplyToScreenName = inReplyToScreenName;
+  }
+
   public TweetModel() {
     super();
   }
@@ -95,6 +166,12 @@ public class TweetModel extends BaseModel {
       this.text = Html.fromHtml(object.getString("text")).toString();
       this.createdAt = object.getString("created_at");
       this.user = new UserModel(object.getJSONObject("user"));
+      this.favoritesCount = object.getInt("favorite_count");
+      this.retweetCount = object.getInt("retweet_count");
+      this.favorited = object.getBoolean("favorited");
+      this.retweeted = object.getBoolean("retweeted");
+      this.inReplyToScreenName = object.getString("in_reply_to_screen_name");
+      this.inReplyToStatusId = object.getString("in_reply_to_status_id");
       if (object.has("entities")) {
         loadEntities(object.getJSONObject("entities"));
       }

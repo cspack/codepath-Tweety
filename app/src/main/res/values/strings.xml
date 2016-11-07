@@ -5,13 +5,22 @@
     <string name="login_label">Log in to Twitter</string>
     <string name="login_failed">Unable to log in to Twitter. Try again.</string>
     <string name="snackbar_throttled">You have made too many requests to Twitter. Please wait a minute.</string>
+    <string name="snackbar_login">Login Failed.</string>
     <string name="snackbar_internal">An internal error occurred.</string>
-    <string name="snackbar_network">Connecting to server failed...</string>
+    <string name="snackbar_network">Connecting to server failed.</string>
+    <string name="snackbar_not_online">You appear to be offline.</string>
     <string name="snackbar_retry">Retry</string>
     <string name="compose">Compose a tweet</string>
     <string name="compose_dialog_title">Compose a Tweet</string>
     <string name="tweet">Tweet</string>
     <string name="submit_label">Tweet</string>
     <string name="cancel_label">Cancel</string>
-
+    <string name="view_profile">View Profile</string>
+    <string name="twitter">Twitter</string>
+    <string name="timeline">Timeline</string>
+    <string name="mentions">Mentions</string>
+    <string name="followers">Followers</string>
+    <string name="following">Following</string>
+    <string name="follow">Follow</string>
+    <string name="description_zoom_touch_close">Expanded image (touch to close)</string>
 </resources>

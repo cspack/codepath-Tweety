@@ -1,10 +1,54 @@
 [
     {
+        "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/ic_star_off.xml",
+        "source": "/home/chris/dev/git/Tweety/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_star_off.xml"
+    },
+    {
+        "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/ic_user_minus.xml",
+        "source": "/home/chris/dev/git/Tweety/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_user_minus.xml"
+    },
+    {
+        "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/ic_star.xml",
+        "source": "/home/chris/dev/git/Tweety/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_star.xml"
+    },
+    {
+        "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/id_card.xml",
+        "source": "/home/chris/dev/git/Tweety/app/build/generated/res/pngs/debug/drawable-anydpi-v21/id_card.xml"
+    },
+    {
         "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/ic_compose.xml",
         "source": "/home/chris/dev/git/Tweety/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_compose.xml"
     },
     {
+        "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/ic_reply.xml",
+        "source": "/home/chris/dev/git/Tweety/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_reply.xml"
+    },
+    {
+        "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/ic_reply_arrow.xml",
+        "source": "/home/chris/dev/git/Tweety/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_reply_arrow.xml"
+    },
+    {
+        "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/ic_twitter_logo_white_on_blue.xml",
+        "source": "/home/chris/dev/git/Tweety/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_twitter_logo_white_on_blue.xml"
+    },
+    {
+        "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/sentiment_sad.xml",
+        "source": "/home/chris/dev/git/Tweety/app/build/generated/res/pngs/debug/drawable-anydpi-v21/sentiment_sad.xml"
+    },
+    {
+        "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/ic_home.xml",
+        "source": "/home/chris/dev/git/Tweety/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_home.xml"
+    },
+    {
+        "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/ic_user_plus.xml",
+        "source": "/home/chris/dev/git/Tweety/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_user_plus.xml"
+    },
+    {
         "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/twitter_logo_white.xml",
         "source": "/home/chris/dev/git/Tweety/app/build/generated/res/pngs/debug/drawable-anydpi-v21/twitter_logo_white.xml"
+    },
+    {
+        "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/ic_retweet.xml",
+        "source": "/home/chris/dev/git/Tweety/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_retweet.xml"
     }
 ]

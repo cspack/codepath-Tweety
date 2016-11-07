@@ -1,6 +1,14 @@
 [
     {
+        "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/menu/home.xml",
+        "source": "/home/chris/dev/git/Tweety/app/src/main/res/menu/home.xml"
+    },
+    {
         "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/menu/login.xml",
         "source": "/home/chris/dev/git/Tweety/app/src/main/res/menu/login.xml"
+    },
+    {
+        "merged": "/home/chris/dev/git/Tweety/app/build/intermediates/res/merged/debug/menu/user.xml",
+        "source": "/home/chris/dev/git/Tweety/app/src/main/res/menu/user.xml"
     }
 ]

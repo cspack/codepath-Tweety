@@ -39,7 +39,8 @@
             android:layout_centerHorizontal="true"
             android:padding="5dp"
             android:layout_margin="4dp"
-            android:visibility="gone"/>
+            android:indeterminateTint="@color/white_alpha_1c"
+            android:visibility="gone" />
 
     <TextView
             android:layout_width="wrap_content"

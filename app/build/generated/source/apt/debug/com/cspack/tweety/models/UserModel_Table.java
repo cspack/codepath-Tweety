@@ -10,10 +10,12 @@ import com.raizlabs.android.dbflow.sql.language.ConditionGroup;
 import com.raizlabs.android.dbflow.sql.language.SQLite;
 import com.raizlabs.android.dbflow.sql.language.property.BaseProperty;
 import com.raizlabs.android.dbflow.sql.language.property.IProperty;
+import com.raizlabs.android.dbflow.sql.language.property.IntProperty;
 import com.raizlabs.android.dbflow.sql.language.property.Property;
 import com.raizlabs.android.dbflow.structure.ModelAdapter;
 import com.raizlabs.android.dbflow.structure.database.DatabaseStatement;
 import com.raizlabs.android.dbflow.structure.database.DatabaseWrapper;
+import java.lang.Boolean;
 import java.lang.Class;
 import java.lang.IllegalArgumentException;
 import java.lang.Override;
@@ -38,7 +40,21 @@ public final class UserModel_Table extends ModelAdapter<UserModel> {
 
   public static final Property<String> profileTextColor = new Property<String>(UserModel.class, "profileTextColor");
 
-  public static final IProperty[] ALL_COLUMN_PROPERTIES = new IProperty[]{id,name,profileImageUrl,screenName,profileBackgroundImageUrlHttps,profileBackgroundColor,profileTextColor};
+  public static final IntProperty followerCount = new IntProperty(UserModel.class, "followerCount");
+
+  public static final IntProperty friendCount = new IntProperty(UserModel.class, "friendCount");
+
+  public static final IntProperty favoriteCount = new IntProperty(UserModel.class, "favoriteCount");
+
+  public static final Property<String> tagLine = new Property<String>(UserModel.class, "tagLine");
+
+  public static final Property<Boolean> verified = new Property<Boolean>(UserModel.class, "verified");
+
+  public static final Property<Boolean> following = new Property<Boolean>(UserModel.class, "following");
+
+  public static final Property<Boolean> followRequestSent = new Property<Boolean>(UserModel.class, "followRequestSent");
+
+  public static final IProperty[] ALL_COLUMN_PROPERTIES = new IProperty[]{id,name,profileImageUrl,screenName,profileBackgroundImageUrlHttps,profileBackgroundColor,profileTextColor,followerCount,friendCount,favoriteCount,tagLine,verified,following,followRequestSent};
 
   public UserModel_Table(DatabaseHolder holder, DatabaseDefinition databaseDefinition) {
     super(databaseDefinition);
@@ -78,6 +94,27 @@ public final class UserModel_Table extends ModelAdapter<UserModel> {
       case "`profileTextColor`":  {
         return profileTextColor;
       }
+      case "`followerCount`":  {
+        return followerCount;
+      }
+      case "`friendCount`":  {
+        return friendCount;
+      }
+      case "`favoriteCount`":  {
+        return favoriteCount;
+      }
+      case "`tagLine`":  {
+        return tagLine;
+      }
+      case "`verified`":  {
+        return verified;
+      }
+      case "`following`":  {
+        return following;
+      }
+      case "`followRequestSent`":  {
+        return followRequestSent;
+      }
       default:  {
         throw new IllegalArgumentException("Invalid column name passed. Ensure you are calling the correct table's column");
       }
@@ -98,6 +135,13 @@ public final class UserModel_Table extends ModelAdapter<UserModel> {
     values.put("profileBackgroundImageUrlHttps", model.profileBackgroundImageUrlHttps != null ? model.profileBackgroundImageUrlHttps : null);
     values.put("profileBackgroundColor", model.profileBackgroundColor != null ? model.profileBackgroundColor : null);
     values.put("profileTextColor", model.profileTextColor != null ? model.profileTextColor : null);
+    values.put("followerCount", model.followerCount);
+    values.put("friendCount", model.friendCount);
+    values.put("favoriteCount", model.favoriteCount);
+    values.put("tagLine", model.tagLine != null ? model.tagLine : null);
+    values.put("verified", model.verified ? 1 : 0);
+    values.put("following", model.following ? 1 : 0);
+    values.put("followRequestSent", model.followRequestSent ? 1 : 0);
   }
 
   @Override
@@ -142,6 +186,17 @@ public final class UserModel_Table extends ModelAdapter<UserModel> {
     } else {
       statement.bindNull(7 + start);
     }
+    statement.bindLong(8 + start, model.followerCount);
+    statement.bindLong(9 + start, model.friendCount);
+    statement.bindLong(10 + start, model.favoriteCount);
+    if (model.tagLine != null)  {
+      statement.bindString(11 + start, model.tagLine);
+    } else {
+      statement.bindNull(11 + start);
+    }
+    statement.bindLong(12 + start, model.verified ? 1 : 0);
+    statement.bindLong(13 + start, model.following ? 1 : 0);
+    statement.bindLong(14 + start, model.followRequestSent ? 1 : 0);
   }
 
   @Override
@@ -151,17 +206,17 @@ public final class UserModel_Table extends ModelAdapter<UserModel> {
 
   @Override
   public final String getInsertStatementQuery() {
-    return "INSERT OR REPLACE INTO `UserModel`(`id`,`name`,`profileImageUrl`,`screenName`,`profileBackgroundImageUrlHttps`,`profileBackgroundColor`,`profileTextColor`) VALUES (?,?,?,?,?,?,?)";
+    return "INSERT OR REPLACE INTO `UserModel`(`id`,`name`,`profileImageUrl`,`screenName`,`profileBackgroundImageUrlHttps`,`profileBackgroundColor`,`profileTextColor`,`followerCount`,`friendCount`,`favoriteCount`,`tagLine`,`verified`,`following`,`followRequestSent`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
   }
 
   @Override
   public final String getCompiledStatementQuery() {
-    return "INSERT OR REPLACE INTO `UserModel`(`id`,`name`,`profileImageUrl`,`screenName`,`profileBackgroundImageUrlHttps`,`profileBackgroundColor`,`profileTextColor`) VALUES (?,?,?,?,?,?,?)";
+    return "INSERT OR REPLACE INTO `UserModel`(`id`,`name`,`profileImageUrl`,`screenName`,`profileBackgroundImageUrlHttps`,`profileBackgroundColor`,`profileTextColor`,`followerCount`,`friendCount`,`favoriteCount`,`tagLine`,`verified`,`following`,`followRequestSent`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
   }
 
   @Override
   public final String getCreationQuery() {
-    return "CREATE TABLE IF NOT EXISTS `UserModel`(`id` TEXT,`name` TEXT,`profileImageUrl` TEXT,`screenName` TEXT,`profileBackgroundImageUrlHttps` TEXT,`profileBackgroundColor` TEXT,`profileTextColor` TEXT, PRIMARY KEY(`id`)" + ");";
+    return "CREATE TABLE IF NOT EXISTS `UserModel`(`id` TEXT,`name` TEXT,`profileImageUrl` TEXT,`screenName` TEXT,`profileBackgroundImageUrlHttps` TEXT,`profileBackgroundColor` TEXT,`profileTextColor` TEXT,`followerCount` INTEGER,`friendCount` INTEGER,`favoriteCount` INTEGER,`tagLine` TEXT,`verified` INTEGER,`following` INTEGER,`followRequestSent` INTEGER, PRIMARY KEY(`id`)" + ");";
   }
 
   @Override
@@ -207,6 +262,48 @@ public final class UserModel_Table extends ModelAdapter<UserModel> {
       model.profileTextColor = cursor.getString(index_profileTextColor);
     } else {
       model.profileTextColor = null;
+    }
+    int index_followerCount = cursor.getColumnIndex("followerCount");
+    if (index_followerCount != -1 && !cursor.isNull(index_followerCount)) {
+      model.followerCount = cursor.getInt(index_followerCount);
+    } else {
+      model.followerCount = 0;
+    }
+    int index_friendCount = cursor.getColumnIndex("friendCount");
+    if (index_friendCount != -1 && !cursor.isNull(index_friendCount)) {
+      model.friendCount = cursor.getInt(index_friendCount);
+    } else {
+      model.friendCount = 0;
+    }
+    int index_favoriteCount = cursor.getColumnIndex("favoriteCount");
+    if (index_favoriteCount != -1 && !cursor.isNull(index_favoriteCount)) {
+      model.favoriteCount = cursor.getInt(index_favoriteCount);
+    } else {
+      model.favoriteCount = 0;
+    }
+    int index_tagLine = cursor.getColumnIndex("tagLine");
+    if (index_tagLine != -1 && !cursor.isNull(index_tagLine)) {
+      model.tagLine = cursor.getString(index_tagLine);
+    } else {
+      model.tagLine = null;
+    }
+    int index_verified = cursor.getColumnIndex("verified");
+    if (index_verified != -1 && !cursor.isNull(index_verified)) {
+      model.verified = cursor.getInt(index_verified) == 1 ? true : false;
+    } else {
+      model.verified = false;
+    }
+    int index_following = cursor.getColumnIndex("following");
+    if (index_following != -1 && !cursor.isNull(index_following)) {
+      model.following = cursor.getInt(index_following) == 1 ? true : false;
+    } else {
+      model.following = false;
+    }
+    int index_followRequestSent = cursor.getColumnIndex("followRequestSent");
+    if (index_followRequestSent != -1 && !cursor.isNull(index_followRequestSent)) {
+      model.followRequestSent = cursor.getInt(index_followRequestSent) == 1 ? true : false;
+    } else {
+      model.followRequestSent = false;
     }
   }
 

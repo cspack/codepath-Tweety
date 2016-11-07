@@ -41,6 +41,27 @@ public class UserModel extends BaseModel {
   @Column
   String profileTextColor;
 
+  @Column
+  int followerCount;
+
+  @Column
+  int friendCount;
+
+  @Column
+  int favoriteCount;
+
+  @Column
+  String tagLine;
+
+  @Column
+  boolean verified;
+
+  @Column
+  boolean following;
+
+  @Column
+  boolean followRequestSent;
+
   public String getId() {
     return id;
   }
@@ -59,6 +80,10 @@ public class UserModel extends BaseModel {
 
   public String getProfileImageUrl() {
     return profileImageUrl;
+  }
+
+  public String getProfileImageUrlBigger() {
+    return profileImageUrl.replace("_normal", "_bigger");
   }
 
   public void setProfileImageUrl(String profileImageUrl) {
@@ -97,6 +122,62 @@ public class UserModel extends BaseModel {
     this.profileTextColor = profileTextColor;
   }
 
+  public int getFollowerCount() {
+    return followerCount;
+  }
+
+  public void setFollowerCount(int followerCount) {
+    this.followerCount = followerCount;
+  }
+
+  public int getFriendCount() {
+    return friendCount;
+  }
+
+  public void setFriendCount(int friendCount) {
+    this.friendCount = friendCount;
+  }
+
+  public String getTagLine() {
+    return tagLine;
+  }
+
+  public void setTagLine(String tagLine) {
+    this.tagLine = tagLine;
+  }
+
+  public int getFavoriteCount() {
+    return favoriteCount;
+  }
+
+  public void setFavoriteCount(int favoriteCount) {
+    this.favoriteCount = favoriteCount;
+  }
+
+  public boolean isVerified() {
+    return verified;
+  }
+
+  public void setVerified(boolean verified) {
+    this.verified = verified;
+  }
+
+  public boolean isFollowing() {
+    return following;
+  }
+
+  public void setFollowing(boolean following) {
+    this.following = following;
+  }
+
+  public boolean isFollowRequestSent() {
+    return followRequestSent;
+  }
+
+  public void setFollowRequestSent(boolean followRequestSent) {
+    this.followRequestSent = followRequestSent;
+  }
+
   public UserModel() {
     super();
   }
@@ -116,6 +197,27 @@ public class UserModel extends BaseModel {
       }
       if (object.has("profile_text_color")) {
         this.profileTextColor = object.getString("profile_text_color");
+      }
+      if (object.has("followers_count")) {
+        this.followerCount = object.getInt("followers_count");
+      }
+      if (object.has("friends_count")) {
+        this.friendCount = object.getInt("friends_count");
+      }
+      if (object.has("favourites_count")) {
+        this.favoriteCount = object.getInt("favourites_count");
+      }
+      if (object.has("description")) {
+        this.tagLine = object.getString("description");
+      }
+      if (object.has("verified")) {
+        this.verified = object.getBoolean("verified");
+      }
+      if (object.has("following")) {
+        this.following = object.getBoolean("following");
+      }
+      if (object.has("follow_request_sent")) {
+        this.followRequestSent = object.getBoolean("follow_request_sent");
       }
     } catch (JSONException e) {
       e.printStackTrace();

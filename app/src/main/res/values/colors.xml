@@ -9,5 +9,11 @@
     <color name="twitter_gray_7c">#AAB8C2</color>
     <color name="twitter_gray_3c">#E1E8ED</color>
     <color name="twitter_gray_1c">#F5F8FA</color>
+
+    <color name="white_alpha_9c">#66c0f0ff</color>
+    <color name="white_alpha_7c">#99e0f0ff</color>
+    <color name="white_alpha_3c">#aae0f0ff</color>
+    <color name="white_alpha_1c">#ddffffff</color>
+
     <color name="color_error">#cc3030</color>
 </resources>

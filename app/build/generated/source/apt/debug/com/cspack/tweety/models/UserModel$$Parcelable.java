@@ -11,7 +11,7 @@ import org.parceler.Generated;
 import org.parceler.ParcelWrapper;
 import org.parceler.ParcelerRuntimeException;
 
-@Generated(value = "org.parceler.ParcelAnnotationProcessor", date = "2016-10-30T13:37-0700")
+@Generated(value = "org.parceler.ParcelAnnotationProcessor", date = "2016-11-06T01:28-0800")
 @SuppressWarnings({
     "unchecked",
     "deprecation"
@@ -42,13 +42,20 @@ public class UserModel$$Parcelable
                 parcel$$1 .writeInt(-1);
             } else {
                 parcel$$1 .writeInt(1);
+                parcel$$1 .writeInt(userModel$$1 .friendCount);
                 parcel$$1 .writeString(userModel$$1 .profileBackgroundImageUrlHttps);
-                parcel$$1 .writeString(userModel$$1 .name);
+                parcel$$1 .writeString(userModel$$1 .tagLine);
                 parcel$$1 .writeString(userModel$$1 .profileBackgroundColor);
+                parcel$$1 .writeInt((userModel$$1 .verified? 1 : 0));
                 parcel$$1 .writeString(userModel$$1 .profileTextColor);
-                parcel$$1 .writeString(userModel$$1 .id);
                 parcel$$1 .writeString(userModel$$1 .screenName);
+                parcel$$1 .writeInt((userModel$$1 .following? 1 : 0));
+                parcel$$1 .writeString(userModel$$1 .name);
+                parcel$$1 .writeString(userModel$$1 .id);
                 parcel$$1 .writeString(userModel$$1 .profileImageUrl);
+                parcel$$1 .writeInt(userModel$$1 .followerCount);
+                parcel$$1 .writeInt(userModel$$1 .favoriteCount);
+                parcel$$1 .writeInt((userModel$$1 .followRequestSent? 1 : 0));
             }
         }
     }
@@ -81,13 +88,20 @@ public class UserModel$$Parcelable
             identityMap$$0 .put(identity$$1, null);
             userModel$$5 = new com.cspack.tweety.models.UserModel();
             identityMap$$0 .put(identity$$1, userModel$$5);
+            userModel$$5 .friendCount = parcel$$3 .readInt();
             userModel$$5 .profileBackgroundImageUrlHttps = parcel$$3 .readString();
-            userModel$$5 .name = parcel$$3 .readString();
+            userModel$$5 .tagLine = parcel$$3 .readString();
             userModel$$5 .profileBackgroundColor = parcel$$3 .readString();
+            userModel$$5 .verified = (parcel$$3 .readInt() == 1);
             userModel$$5 .profileTextColor = parcel$$3 .readString();
-            userModel$$5 .id = parcel$$3 .readString();
             userModel$$5 .screenName = parcel$$3 .readString();
+            userModel$$5 .following = (parcel$$3 .readInt() == 1);
+            userModel$$5 .name = parcel$$3 .readString();
+            userModel$$5 .id = parcel$$3 .readString();
             userModel$$5 .profileImageUrl = parcel$$3 .readString();
+            userModel$$5 .followerCount = parcel$$3 .readInt();
+            userModel$$5 .favoriteCount = parcel$$3 .readInt();
+            userModel$$5 .followRequestSent = (parcel$$3 .readInt() == 1);
             userModel$$3 = userModel$$5;
         }
         return userModel$$3;

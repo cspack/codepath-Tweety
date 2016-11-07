@@ -25,4 +25,12 @@
         <item name="android:focusable">true</item>
         <item name="android:clickable">true</item>
     </style>
+
+    <style name="TwitterHomeCustomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabTextAppearance">@style/TwitterHomeCustomTextAppearance</item>
+    </style>
+
+    <style name="TwitterHomeCustomTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+    </style>
 </resources>
